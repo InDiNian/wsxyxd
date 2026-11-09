@@ -1,0 +1,46 @@
+{
+  "dataset": "卫戍协议·规程",
+  "sourceName": "PRTS",
+  "rosterUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B",
+  "importedAt": "2026-11-09T08:22:43.758077+00:00",
+  "tiers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "countsByTier": {
+    "1": 19,
+    "2": 24,
+    "3": 26,
+    "4": 27,
+    "5": 25,
+    "6": 20
+  },
+  "operatorCount": 141,
+  "skillCount": 358,
+  "rosterMode": "default",
+  "synergyStatus": "source",
+  "skillReference": "干员常规技能，提供等级4和7的参考数据；未指定卫戍协议专属技能配置。",
+  "artAttribution": "干员美术资源 © 鹰角网络，来源：PRTS 对应干员页面。",
+  "excludedTiers": [],
+  "excludedRoster": "原型补位",
+  "modeSourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95",
+  "modeImportedAt": "2026-11-09T08:49:39.762900+00:00",
+  "modeDataSource": "PRTS",
+  "modeOperatorCount": 141,
+  "pactCount": 26,
+  "equipmentCount": 70,
+  "excludedSpecialUnits": [
+    "盟约·辅助干员",
+    "“暴躁铁皮”"
+  ],
+  "equipmentRuleSourceUrl": "https://prts.wiki/w/%E5%8F%98%E5%BD%A2%E5%90%8C%E6%9E%84%E4%BD%93",
+  "squadRules": {
+    "baseCapacity": 8,
+    "expandedCapacity": 9,
+    "equipmentSlots": 2
+  }
+}

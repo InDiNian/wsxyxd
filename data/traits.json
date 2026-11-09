@@ -1,0 +1,662 @@
+[
+  {
+    "id": "core-yan",
+    "name": "炎",
+    "icon": "flame",
+    "category": "core",
+    "description": "【炎】干员攻击力+(23+0.9×层数)%\n<在场6名不同的【炎】干员>战斗开始时，【炎】干员每次攻击时造成攻击力6%的随机元素损伤；全场敌人元素损伤恢复速度增加(40+0.3×层数)%",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【炎】干员攻击力+(23+0.9×层数)%",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "战斗开始时，【炎】干员每次攻击时造成攻击力6%的随机元素损伤；全场敌人元素损伤恢复速度增加(40+0.3×层数)%",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/c/c6/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_yanShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_yanShip.png?v=t1af6ve0tez042z7yuo2rqyp5nbv3om",
+    "image": "/assets/pacts/core-yan.webp"
+  },
+  {
+    "id": "core-sargon",
+    "name": "萨尔贡",
+    "icon": "sun",
+    "category": "core",
+    "description": "【萨尔贡】干员开启技能时，所有【萨尔贡】干员攻击速度+12（至多+300），持续(5+0.22×层数)秒\n<在场6名不同的【萨尔贡】干员>【萨尔贡】干员每次开启技能时，在攻击范围内制造一个流沙地面。位于流沙地面上的敌人受到(20+0.025×层数)%的迟钝效果，每5秒造成一次(5000+25×层数)点法术伤害并束缚1秒；【萨尔贡】干员技能持续期间，攻击范围内的流沙地面使敌人的迟钝效果变为2倍，每秒受到(800+4×层数)点法术伤害",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【萨尔贡】干员开启技能时，所有【萨尔贡】干员攻击速度+12（至多+300），持续(5+0.22×层数)秒",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "【萨尔贡】干员每次开启技能时，在攻击范围内制造一个流沙地面。位于流沙地面上的敌人受到(20+0.025×层数)%的迟钝效果，每5秒造成一次(5000+25×层数)点法术伤害并束缚1秒；【萨尔贡】干员技能持续期间，攻击范围内的流沙地面使敌人的迟钝效果变为2倍，每秒受到(800+4×层数)点法术伤害",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/b/ba/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_sargonShip.png",
+    "image": "/assets/pacts/core-sargon.webp"
+  },
+  {
+    "id": "core-victoria",
+    "name": "维多利亚",
+    "icon": "flag",
+    "category": "core",
+    "description": "携带装备的【维多利亚】干员伤害提升至(125+0.8×层数)%\n<每叠加25层>获得一件带有随机特殊效果的维式重锤\n<在场6名不同【维多利亚】干员>【维多利亚】干员每携带1件装备攻击力+40%，携带进阶装备改为+80%",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "携带装备的【维多利亚】干员伤害提升至(125+0.8×层数)%\n<每叠加25层>获得一件带有随机特殊效果的维式重锤",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "【维多利亚】干员每携带1件装备攻击力+40%，携带进阶装备改为+80%",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/e/e7/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_victoriaShip.png",
+    "image": "/assets/pacts/core-victoria.webp"
+  },
+  {
+    "id": "core-kjerag",
+    "name": "谢拉格",
+    "icon": "mountain",
+    "category": "core",
+    "description": "【谢拉格】干员伤害提升至125%，对寒冷和冻结敌人额外提升至(135+1×层数)%\n<每叠加100层>获得一件谢拉格不融冰\n<在场6名不同的【谢拉格】干员>战斗开始时召唤可自主行动的雪山巨人，其攻击力和生命值随谢拉格层数提升而提升。雪山巨人将在巨人和雪山形态转换，雪山形态可以阻挡敌人并造成溅射伤害，雪山形态攻击被冻结的敌人时造成高额法术伤害并解除目标的冻结状态；巨人形态可以移动并对敌人造成远程溅射伤害",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【谢拉格】干员伤害提升至125%，对寒冷和冻结敌人额外提升至(135+1×层数)%\n<每叠加100层>获得一件谢拉格不融冰",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "战斗开始时召唤可自主行动的雪山巨人，其攻击力和生命值随谢拉格层数提升而提升。雪山巨人将在巨人和雪山形态转换，雪山形态可以阻挡敌人并造成溅射伤害，雪山形态攻击被冻结的敌人时造成高额法术伤害并解除目标的冻结状态；巨人形态可以移动并对敌人造成远程溅射伤害",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/b/b0/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_kjeragShip.png",
+    "image": "/assets/pacts/core-kjerag.webp"
+  },
+  {
+    "id": "core-abyssal-hunters",
+    "name": "阿戈尔",
+    "icon": "waves",
+    "aliases": [
+      "深海猎人"
+    ],
+    "category": "core",
+    "description": "【阿戈尔】干员生命值+(35+1×层数)%\n战斗开始时【阿戈尔】干员依次吞噬身前一格干员造成5000点物理伤害并获得其基础攻击力和阻挡数，并叠加等于被吞噬者等阶的盟约层数（【阿戈尔】之间优先对更靠左和靠上的干员发起吞噬）\n<在场6名不同【阿戈尔】干员>前3名【阿戈尔】干员首次被击倒时立刻复活",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【阿戈尔】干员生命值+(35+1×层数)%\n战斗开始时【阿戈尔】干员依次吞噬身前一格干员造成5000点物理伤害并获得其基础攻击力和阻挡数，并叠加等于被吞噬者等阶的盟约层数（【阿戈尔】之间优先对更靠左和靠上的干员发起吞噬）",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "前3名【阿戈尔】干员首次被击倒时立刻复活",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/e/e5/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_egirShip.png",
+    "image": "/assets/pacts/core-abyssal-hunters.webp"
+  },
+  {
+    "id": "core-siracusa",
+    "name": "叙拉古",
+    "icon": "moon",
+    "category": "core",
+    "description": "【叙拉古】干员部署后攻击速度+(25+0.8×层数)，持续(32+0.4×层数)秒\n<在场6名不同的【叙拉古】干员>每次攻击时有30%概率为敌人随机附加一个异常状态，持续(1+0.0018×层数)秒；敌人存在2种或以上异常状态时，每秒对自身及周围一定范围内的敌人造成(800+10×层数)点真实伤害",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【叙拉古】干员部署后攻击速度+(25+0.8×层数)，持续(32+0.4×层数)秒",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "每次攻击时有30%概率为敌人随机附加一个异常状态，持续(1+0.0018×层数)秒；敌人存在2种或以上异常状态时，每秒对自身及周围一定范围内的敌人造成(800+10×层数)点真实伤害",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/b/b6/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_siracusaShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_siracusaShip.png?v=9dvczcdlsng6co3qxe3wikqz2e9zphf",
+    "image": "/assets/pacts/core-siracusa.webp"
+  },
+  {
+    "id": "core-kazimierz",
+    "name": "卡西米尔",
+    "icon": "shield",
+    "category": "core",
+    "description": "每次有干员部署时【卡西米尔】干员攻击力+20%（至多+(50+1×层数)%），持续至战斗结束\n<在场6名不同的【卡西米尔】干员>【卡西米尔】地面干员被击倒时离场并召唤整备区最右侧【卡西米尔】干员加入战斗（不改变当前盟约的激活状态）；【卡西米尔】干员开启技能或部署后30秒内攻击时附带攻击力65%的真实伤害",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "每次有干员部署时【卡西米尔】干员攻击力+20%（至多+(50+1×层数)%），持续至战斗结束",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "【卡西米尔】地面干员被击倒时离场并召唤整备区最右侧【卡西米尔】干员加入战斗（不改变当前盟约的激活状态）；【卡西米尔】干员开启技能或部署后30秒内攻击时附带攻击力65%的真实伤害",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/0d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_kazimierzShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_kazimierzShip.png?v=nal1awxjztsqpmn7y7yn5xzo8kemrrz",
+    "image": "/assets/pacts/core-kazimierz.webp"
+  },
+  {
+    "id": "core-ursus",
+    "name": "乌萨斯",
+    "icon": "swords",
+    "category": "core",
+    "description": "【乌萨斯】干员攻击力+(35+0.75×层数)%，生命值+(10+0.3×层数)%，【乌萨斯】干员击倒其他单位时为【乌萨斯】叠加2层临时层数\n<在场6名不同的【乌萨斯】干员>【乌萨斯】干员受到伤害的(15+0.05×层数)%转化为10秒的生命流失，当伤害来源被击倒时不再流失生命；阻挡敌人期间，敌人每秒受到相当于攻击力(50+0.25×层数)%的法术伤害；【乌萨斯】干员击倒其他单位时叠加的临时层数提升至4层",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【乌萨斯】干员攻击力+(35+0.75×层数)%，生命值+(10+0.3×层数)%，【乌萨斯】干员击倒其他单位时为【乌萨斯】叠加2层临时层数",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "【乌萨斯】干员受到伤害的(15+0.05×层数)%转化为10秒的生命流失，当伤害来源被击倒时不再流失生命；阻挡敌人期间，敌人每秒受到相当于攻击力(50+0.25×层数)%的法术伤害；【乌萨斯】干员击倒其他单位时叠加的临时层数提升至4层",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/f/f1/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_ursusShip.png",
+    "image": "/assets/pacts/core-ursus.webp"
+  },
+  {
+    "id": "core-iberia",
+    "name": "伊比利亚",
+    "icon": "anchor",
+    "category": "core",
+    "description": "【伊比利亚】干员或炼金单元每次造成伤害时，使目标每秒受到(11+0.06×层数)%攻击力（至多叠加10次）的持续法术伤害，持续10秒\n<在场6名不同的【伊比利亚】干员>【伊比利亚】干员或炼金单元造成伤害时附带的持续法术伤害提升至2倍，并使目标移动速度-4%（至多-80%），持续10秒；【伊比利亚】干员或炼金单元每次造成伤害时有20%概率弹射到周围一定范围内的敌人造成300%攻击力的法术伤害",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【伊比利亚】干员或炼金单元每次造成伤害时，使目标每秒受到(11+0.06×层数)%攻击力（至多叠加10次）的持续法术伤害，持续10秒",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "【伊比利亚】干员或炼金单元造成伤害时附带的持续法术伤害提升至2倍，并使目标移动速度-4%（至多-80%），持续10秒；【伊比利亚】干员或炼金单元每次造成伤害时有20%概率弹射到周围一定范围内的敌人造成300%攻击力的法术伤害",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d2/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_iberiaShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_iberiaShip.png?v=mmvyc14y662al1wyd8304xq0dwml9ih",
+    "image": "/assets/pacts/core-iberia.webp"
+  },
+  {
+    "id": "core-leithanien",
+    "name": "莱塔尼亚",
+    "icon": "music",
+    "category": "core",
+    "description": "【莱塔尼亚】干员和召唤物攻击力+(30+1×层数)%，场上敌人被击倒时在附近召唤“一个小节”（场上最多存在10个）\n<在场6名不同的【莱塔尼亚】干员>召唤“一个小节”时(30+0.1×层数)%概率改为召唤“一个乐部”，在场时使【莱塔尼亚】干员攻速+20；场上【莱塔尼亚】召唤物上限提升至20；场上我方干员被击倒时会额外召唤“一个小节”",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "【莱塔尼亚】干员和召唤物攻击力+(30+1×层数)%，场上敌人被击倒时在附近召唤“一个小节”（场上最多存在10个）",
+        "metric": "activation"
+      },
+      {
+        "count": 6,
+        "effect": "召唤“一个小节”时(30+0.1×层数)%概率改为召唤“一个乐部”，在场时使【莱塔尼亚】干员攻速+20；场上【莱塔尼亚】召唤物上限提升至20；场上我方干员被击倒时会额外召唤“一个小节”",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E6%A0%B8%E5%BF%83%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/03/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_lethaniaShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_lethaniaShip.png?v=g78iio5uxde4kqv1nu3gk8cmx2b3dss",
+    "image": "/assets/pacts/core-leithanien.webp"
+  },
+  {
+    "id": "additional-precision",
+    "name": "精准",
+    "icon": "crosshair",
+    "category": "additional",
+    "description": "【精准】干员攻击力+(10+1.2×层数)%\n<在场3名不同【精准】干员>生效范围变为【精准】干员和所有远程干员，且攻击无视30%防御力和法术抗性",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【精准】干员攻击力+(10+1.2×层数)%",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "生效范围变为【精准】干员和所有远程干员，且攻击无视30%防御力和法术抗性",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/b/bc/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_preciShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_preciShip.png?v=sbh4sx0uuqb1xvmlct4lc7x502hb0y8",
+    "image": "/assets/pacts/additional-precision.webp"
+  },
+  {
+    "id": "additional-swiftness",
+    "name": "迅捷",
+    "icon": "clock",
+    "category": "additional",
+    "description": "【迅捷】干员技能结束时有(20+0.35×层数)%概率立刻回复12点技力\n<达到40层>所有干员技能结束时有等概率额外回复15点技力",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【迅捷】干员技能结束时有(20+0.35×层数)%概率立刻回复12点技力\n<达到40层>所有干员技能结束时有等概率额外回复15点技力",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/da/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_swiftShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_swiftShip.png?v=0jnba1r6879mrxln032ka14zwn13lk3",
+    "image": "/assets/pacts/additional-swiftness.webp"
+  },
+  {
+    "id": "additional-dexterity",
+    "name": "灵巧",
+    "icon": "leaf",
+    "category": "additional",
+    "description": "【灵巧】干员及周围4格的干员攻击速度+(10+1×层数)\n<达到40层>生效范围变为【灵巧】干员周围8格",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【灵巧】干员及周围4格的干员攻击速度+(10+1×层数)\n<达到40层>生效范围变为【灵巧】干员周围8格",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/7/7d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_skillfulShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_skillfulShip.png?v=31bijemy3qzk54t1bnpcku2yhvapr9w",
+    "image": "/assets/pacts/additional-dexterity.webp"
+  },
+  {
+    "id": "additional-steadfast",
+    "name": "坚守",
+    "icon": "shield",
+    "category": "additional",
+    "description": "所有干员生命值+(25+1.2×层数)%\n<在场3名不同【坚守】干员>场上非【坚守】干员受到伤害时，所受伤害的40%由【坚守】干员平均承担；【坚守】干员受到伤害时，伤害来源受到(850+10×层数)点法术伤害（每0.2秒至多触发1次）和持续5秒的40%的脆弱效果",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "所有干员生命值+(25+1.2×层数)%",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "场上非【坚守】干员受到伤害时，所受伤害的40%由【坚守】干员平均承担；【坚守】干员受到伤害时，伤害来源受到(850+10×层数)点法术伤害（每0.2秒至多触发1次）和持续5秒的40%的脆弱效果",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/17/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_steadShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_steadShip.png?v=5km6l619bsfmdtysaldkkb70uuk3eei",
+    "image": "/assets/pacts/additional-steadfast.webp"
+  },
+  {
+    "id": "additional-support",
+    "name": "助力",
+    "icon": "plus",
+    "category": "additional",
+    "description": "所有干员防御力+(15+1.2×层数)%，再部署时间-30%\n休整期结束时，使当前所有已激活的盟约层数+2\n<在场3名不同【助力】干员>改为层数+4",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "所有干员防御力+(15+1.2×层数)%，再部署时间-30%\n休整期结束时，使当前所有已激活的盟约层数+2",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "改为层数+4",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/f9/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_deputShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_deputShip.png?v=e3iit72r52vit7lh6bw4ioj9q3q71s0",
+    "image": "/assets/pacts/additional-support.webp"
+  },
+  {
+    "id": "additional-foresight",
+    "name": "远见",
+    "icon": "search",
+    "category": "additional",
+    "description": "<每叠加10层>获得一次2资金\n<首次到达80层>所有【远见】干员购买价格永久-1资金\n<首次到达150层>所有【远见】干员购买价格额外永久-1资金\n整备区的【远见】干员也可用于激活盟约",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "<每叠加10层>获得一次2资金\n<首次到达80层>所有【远见】干员购买价格永久-1资金\n<首次到达150层>所有【远见】干员购买价格额外永久-1资金\n整备区的【远见】干员也可用于激活盟约",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/8/82/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_visiShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_visiShip.png?v=ncv1zg7xjygtcxk5fu6gnw7ommfr0o0",
+    "image": "/assets/pacts/additional-foresight.webp"
+  },
+  {
+    "id": "additional-miracle",
+    "name": "奇迹",
+    "icon": "sparkles",
+    "category": "additional",
+    "description": "刷新调度中心时，有(18+0.25×层数)%概率使下次刷新不消耗资金\n<首次到达100层>调度中心刷新时至少出现一名等同于当前调度中心等级的干员\n整备区的【奇迹】干员也可用于激活盟约",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "刷新调度中心时，有(18+0.25×层数)%概率使下次刷新不消耗资金\n<首次到达100层>调度中心刷新时至少出现一名等同于当前调度中心等级的干员\n整备区的【奇迹】干员也可用于激活盟约",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/fe/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_miraShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_miraShip.png?v=q59ddl7g65l9kt1yqjne6xrhjrb9r32",
+    "image": "/assets/pacts/additional-miracle.webp"
+  },
+  {
+    "id": "additional-investor",
+    "name": "投资人",
+    "icon": "coin",
+    "category": "additional",
+    "description": "干员的“获得时”类特质每次触发2次\n<达到100层>“获得时”类特质每次触发3次\n整备区的【投资人】干员也可用于激活盟约",
+    "activationRequired": 3,
+    "levels": [
+      {
+        "count": 3,
+        "effect": "干员的“获得时”类特质每次触发2次\n<达到100层>“获得时”类特质每次触发3次\n整备区的【投资人】干员也可用于激活盟约",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/e/e0/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_investShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_investShip.png?v=r7rl8802dut1asun8ozaqi5x2us7wwa",
+    "image": "/assets/pacts/additional-investor.webp"
+  },
+  {
+    "id": "additional-assault",
+    "name": "突袭",
+    "icon": "swords",
+    "category": "additional",
+    "description": "【突袭】干员10秒内未进行攻击或技能就绪时，若范围内没有敌人，则保留技力立即再部署至一名地面敌人周围，期间攻击力和生命值+(25+1×层数)%\n<达到50层>所有干员攻击速度+50",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【突袭】干员10秒内未进行攻击或技能就绪时，若范围内没有敌人，则保留技力立即再部署至一名地面敌人周围，期间攻击力和生命值+(25+1×层数)%\n<达到50层>所有干员攻击速度+50",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/ae/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_raidShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_raidShip.png?v=etktvq25ntxsmyb78uaz1h8em2m0vq9",
+    "image": "/assets/pacts/additional-assault.webp"
+  },
+  {
+    "id": "additional-indomitable",
+    "name": "不屈",
+    "icon": "flag",
+    "category": "additional",
+    "description": "地面干员被击倒时，有(18+0.4×层数)%概率立刻重新部署\n<在场3名不同【不屈】干员>地面干员被击倒时使场上所有干员技力+5",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "地面干员被击倒时，有(18+0.4×层数)%概率立刻重新部署",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "地面干员被击倒时使场上所有干员技力+5",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/a1/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_indomShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_indomShip.png?v=pu3l67bm00fsuy1awfxjzc5we5ngfmg",
+    "image": "/assets/pacts/additional-indomitable.webp"
+  },
+  {
+    "id": "additional-harmony",
+    "name": "调和",
+    "icon": "music",
+    "category": "additional",
+    "description": "激活时可以使场上核心盟约的激活人数+1，【调和】干员享受已激活的核心盟约的效果",
+    "activationRequired": 1,
+    "levels": [
+      {
+        "count": 1,
+        "effect": "激活时可以使场上核心盟约的激活人数+1，【调和】干员享受已激活的核心盟约的效果",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 1,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/c/c6/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_maniShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_maniShip.png?v=1rdf0zg09fktkfssof9ssp3f9aog5lg",
+    "image": "/assets/pacts/additional-harmony.webp"
+  },
+  {
+    "id": "additional-cooperative-defender",
+    "name": "协防干员",
+    "icon": "users",
+    "category": "additional",
+    "description": "所有干员受到的物理和法术伤害-20%；【协防干员】伤害提升至120%，精锐【协防干员】造成伤害提升至140%",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "所有干员受到的物理和法术伤害-20%；【协防干员】伤害提升至120%，精锐【协防干员】造成伤害提升至140%",
+        "metric": "activation"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/5/5b/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_emptyShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_emptyShip.png?v=94hy0vf1wa5jvx6dizhwui9vp0oi1d6",
+    "image": "/assets/pacts/additional-cooperative-defender.webp"
+  },
+  {
+    "id": "additional-solitude",
+    "name": "独行",
+    "icon": "moon",
+    "category": "additional",
+    "description": "<在场1名【独行】干员>【独行】干员攻击力和生命值+60%，初始技力+15（在场2名及以上【独行】干员时失效）",
+    "activationRequired": 1,
+    "levels": [
+      {
+        "count": 1,
+        "effect": "【独行】干员攻击力和生命值+60%，初始技力+15（在场2名及以上【独行】干员时失效）",
+        "metric": "members"
+      }
+    ],
+    "maxCount": 1,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/e/e0/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_soloShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_soloShip.png?v=dg7ei52z6eplk6oe972y1am1grvnk74",
+    "image": "/assets/pacts/additional-solitude.webp"
+  },
+  {
+    "id": "additional-ultimate",
+    "name": "绝技",
+    "icon": "wand",
+    "category": "additional",
+    "description": "<在场2名精锐状态的干员>精锐状态的干员攻击力+30%\n<在场5名精锐状态的干员>精锐状态的干员技力消耗-30%\n（所有干员的精锐状态均可激活盟约）",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "精锐状态的干员攻击力+30%",
+        "metric": "members"
+      },
+      {
+        "count": 5,
+        "effect": "精锐状态的干员技力消耗-30%\n（所有干员的精锐状态均可激活盟约）",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "elite",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/dc/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_suntShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_suntShip.png?v=6imgzilwm4j1q33gjvgawcjyjtvt4qq",
+    "image": "/assets/pacts/additional-ultimate.webp"
+  },
+  {
+    "id": "additional-aggregation",
+    "name": "聚合",
+    "icon": "grid",
+    "category": "additional",
+    "description": "【聚合】干员攻击范围内的我方单位每秒回复攻击力(16+0.12×层数)%的生命值和攻击力(8+0.06×层数)%的元素损伤\n<在场3名【聚合】干员>【聚合】干员攻击范围内的所有干员获得(15+0.08×层数)%的庇护",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【聚合】干员攻击范围内的我方单位每秒回复攻击力(16+0.12×层数)%的生命值和攻击力(8+0.06×层数)%的元素损伤",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "【聚合】干员攻击范围内的所有干员获得(15+0.08×层数)%的庇护",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/ae/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_docShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_docShip.png?v=7o22w2lklh5hvs3mo7tn8s6u3nk6g0q",
+    "image": "/assets/pacts/additional-aggregation.webp"
+  },
+  {
+    "id": "additional-arcane",
+    "name": "奥术",
+    "icon": "sun",
+    "category": "additional",
+    "description": "【奥术】干员造成伤害时额外附加一次(20+0.4×层数)%攻击力的法术伤害\n<在场3名不同【奥术】干员>场上所有敌人每次受到伤害时法术抗性-1（至多(-30-0.05×层数)）；【奥术】干员攻击范围内的敌人隐匿效果失效",
+    "activationRequired": 2,
+    "levels": [
+      {
+        "count": 2,
+        "effect": "【奥术】干员造成伤害时额外附加一次(20+0.4×层数)%攻击力的法术伤害",
+        "metric": "activation"
+      },
+      {
+        "count": 3,
+        "effect": "场上所有敌人每次受到伤害时法术抗性-1（至多(-30-0.05×层数)）；【奥术】干员攻击范围内的敌人隐匿效果失效",
+        "metric": "members"
+      }
+    ],
+    "maxCount": null,
+    "countMode": "membership",
+    "coreActivationBonus": 0,
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#%E9%99%84%E5%8A%A0%E7%9B%9F%E7%BA%A6",
+    "source": "PRTS",
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/f5/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_arcaneShip.png/80px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_icon_arcaneShip.png?v=aibli0xyuyvd6mqzatfwgnmyo5szmqf",
+    "image": "/assets/pacts/additional-arcane.webp"
+  }
+]
