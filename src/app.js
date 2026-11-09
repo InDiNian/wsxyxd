@@ -1,5 +1,6 @@
 import { validateData, normalizeSelection, calculateLineup, filterCards, featureFacets, normalizeBuild, squadCapacity, pactProgress } from './domain.js';
 import { sitePath, localAsset } from './paths.js';
+import { filterStrategies } from './strategies.js';
 
 const icons = {
   grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
@@ -35,12 +36,13 @@ const icons = {
 const icon = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] || icons.sparkles}</svg>`;
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const storageKey = 'lineup-lab:v1';
-let cards = [], traits = [], equipment = [], selected = [], view = 'builder', sourceInfo = {};
+let cards = [], traits = [], equipment = [], strategies = [], selected = [], view = 'builder', sourceInfo = {};
+let strategyFilters = { query: '', usage: '', trait: '' };
 let loadout = {}, eliteIds = [], capacityExpanded = false, equipmentQuery = '';
 const build = () => ({ cardIds: [...selected], loadout, eliteIds, capacityExpanded });
 const lineupFor = (ids = selected, config = { loadout, eliteIds }) => calculateLineup(ids, cards, traits, { ...config, equipment });
 const initialView = new URLSearchParams(location.search).get('view');
-if (['builder', 'library', 'rules'].includes(initialView)) view = initialView;
+if (['builder', 'library', 'rules', 'strategies'].includes(initialView)) view = initialView;
 if (initialView === 'editor') view = 'rules';
 let filters = { query: '', tier: null, profession: '', trait: '', classification: '', feature: '' };
 let currentSkill = 0, currentSkillLevel = 7;
@@ -103,7 +105,7 @@ function shell() {
       <span class="local-status"><i></i> 小队规划</span>
     </div></header>
     <main id="main" class="page"></main>
-    <footer class="site-footer"><div class="footer-identity"><strong>卫戍协议小队规划器</strong><span class="creator-credit">制作人 · B站 @k117777_01</span></div><span>卫戍协议 · 规程 <span class="footer-dot">/</span> V 0.12</span></footer>
+    <footer class="site-footer"><div class="footer-identity"><strong>卫戍协议小队规划器</strong><span class="creator-credit">制作人 · B站 @k117777_01</span></div><span>卫戍协议 · 规程 <span class="footer-dot">/</span> V 0.13</span></footer>
     <nav class="mobile-nav" aria-label="手机导航">${navButtons()}</nav>
     <dialog id="dialog" aria-label="详情"><div id="dialog-content"></div></dialog>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>`;
@@ -111,10 +113,12 @@ function shell() {
   $('#app').addEventListener('input', event => {
     if (event.target.id === 'search') { filters.query = event.target.value; renderCards(); renderFilterStatus(); }
     if (event.target.id === 'equipment-search') { equipmentQuery = event.target.value; renderEquipmentCatalog(); }
+    if (event.target.id === 'strategy-search') { strategyFilters.query = event.target.value; renderStrategyCatalog(); }
   });
   $('#app').addEventListener('change', event => {
     if (event.target.id === 'trait-filter') { filters.trait = event.target.value; renderCards(); renderFilterStatus(); }
     if (event.target.id === 'capacity-expanded') { setCapacity(event.target.checked); }
+    if (event.target.id === 'strategy-pact-filter') { strategyFilters.trait = event.target.value; renderStrategyCatalog(); }
     if (event.target.matches('[data-equipment-slot], #member-elite, #conversion-preset')) { changeMemberEquipment(event.target); }
     if (event.target.id === 'profession-filter') { filters.profession = event.target.value; renderCards(); renderFilterStatus(); }
     if (event.target.id === 'skill-level') { currentSkillLevel = Number(event.target.value); renderSkillPanel($('#skill-panel').dataset.id); }
@@ -131,18 +135,22 @@ function shell() {
 }
 
 function navButtons() {
-  return [['builder', 'grid', '阵容搭配'], ['library', 'book', '卡牌图鉴'], ['rules', 'sparkles', '盟约与装备']].map(([id, image, label]) => `<button class="nav-item ${view === id ? 'active' : ''}" data-action="view" data-view="${id}" ${view === id ? 'aria-current="page"' : ''}>${icon(image)}<span>${label}</span></button>`).join('');
+  return [['builder', 'grid', '阵容搭配'], ['library', 'book', '卡牌图鉴'], ['rules', 'sparkles', '盟约与装备'], ['strategies', 'flag', '策略图鉴']].map(([id, image, label]) => `<button class="nav-item ${view === id ? 'active' : ''}" data-action="view" data-view="${id}" ${view === id ? 'aria-current="page"' : ''}>${icon(image)}<span>${label}</span></button>`).join('');
 }
 
 function renderPage() {
   document.querySelectorAll('.desktop-nav, .mobile-nav').forEach(nav => nav.innerHTML = navButtons());
-  const headings = { builder: ['BUILD YOUR SYNERGY', '开始挑选阵容', '挑选干员，搭配装备，实时查看小队盟约。'], library: ['OPERATOR ARCHIVE', '了解你的干员', '搜索干员、盟约和特质，找到你需要的搭配。'], rules: ['PACT & EQUIPMENT ARCHIVE', '了解所用盟约与装备', '查阅 PRTS 盟约规则、人数条件与装备效果。'] };
+  const headings = { builder: ['BUILD YOUR SYNERGY', '开始挑选阵容', '挑选干员，搭配装备，实时查看小队盟约。'], library: ['OPERATOR ARCHIVE', '了解你的干员', '搜索干员、盟约和特质，找到你需要的搭配。'], rules: ['PACT & EQUIPMENT ARCHIVE', '了解所用盟约与装备', '查阅 PRTS 盟约规则、人数条件与装备效果。'], strategies: ['STRATEGY ARCHIVE', '找到你的开局策略', '了解发起人、初始生命值、策略效果与解锁条件。'] };
   const [eyebrow, title, subtitle] = headings[view];
   $('#main').innerHTML = `<div class="page-heading"><div><div class="eyebrow"><span></span>${eyebrow}</div><h1>${title}</h1><p>${subtitle}</p></div><div class="demo-badge">${icon('book')}<div><strong>卫戍协议 · 规程</strong><span>PRTS 盟约记录</span></div></div></div>
-    ${view === 'builder' ? `<div class="workspace"><section id="squad-panel" class="panel squad-panel" aria-label="已选小队"></section><section class="panel library-panel" aria-label="卡牌库">${libraryShell()}</section></div>` : view === 'library' ? `<section class="panel standalone-library" aria-label="卡牌图鉴">${libraryShell()}</section>` : referenceShell()}
+    ${view === 'builder' ? `<div class="workspace"><section id="squad-panel" class="panel squad-panel" aria-label="已选小队"></section><section class="panel library-panel" aria-label="卡牌库">${libraryShell()}</section></div>` : view === 'library' ? `<section class="panel standalone-library" aria-label="卡牌图鉴">${libraryShell()}</section>` : view === 'strategies' ? strategyShell() : referenceShell()}
     <div class="data-note">${icon('info')}<span>干员盟约、普通 / 精锐特质、盟约人数与装备效果来自 <a href="${escape(sourceInfo.modeSourceUrl)}" target="_blank" rel="noopener noreferrer">PRTS · 盟约记录 ↗</a>。点击盟约查看完整效果与条件。<br/>干员美术资源 © 鹰角网络 · 技能仍提供常规等级 4 / 7 参考资料。</span></div>`;
   renderDynamic();
   if (view === 'rules') renderEquipmentCatalog();
+  if (view === 'strategies') {
+    renderStrategyCatalog();
+    $('.data-note span').innerHTML = `策略资料来自 <a href="${escape(sourceInfo.strategySourceUrl)}" target="_blank" rel="noopener noreferrer">PRTS · S.W.E.E.P. 策略报告 ↗</a>，展示本期「卫戍协议·规程」的策略效果与解锁条件。<br/>美术资源 © 鹰角网络 · 来源：PRTS。`;
+  }
 }
 
 function libraryShell() {
@@ -323,6 +331,28 @@ function renderMemberFeedback(id) {
   $('#member-equipment-feedback').innerHTML = `<div class="equipment-result"><h3>当前盟约</h3><div class="detail-traits">${card.nativeTraitIds.map(id => `<span class="trait-chip">${escape(pactName(id))}</span>`).join('')}${card.equipmentTraitIds.map(id => `<span class="trait-chip equipment-granted">装备 ＋ ${escape(pactName(id))}</span>`).join('')}${card.elite ? '<span class="trait-chip equipment-granted">精锐 · 绝技</span>' : ''}</div><p>${card.equipmentTraitIds.length ? '装备新增盟约已计入小队。' : duplicate ? '已拥有该盟约，同一干员仍只计 1 人。' : hasConverter ? '请搭配一种 PRTS 已列出对应盟约的装备。' : '普通装备单独携带不会增加盟约。'}</p></div><section class="configured-feature"><h3>${card.elite ? '精锐' : '普通'}特质</h3><p>${escape(card.elite ? card.eliteFeature : card.modeFeature)}</p></section>`;
 }
 
+function strategyIcon(item) {
+  return item.image ? `<img src="${escape(item.image)}" alt="" loading="lazy"/>` : icon('flag');
+}
+
+function strategyShell() {
+  return `<section class="panel strategy-panel" aria-label="策略图鉴"><div class="section-heading"><div class="section-title">${icon('flag')}<h2>策略资料</h2><span class="count-label">${strategies.length}</span></div><span class="section-hint">点击查看完整效果</span></div><div class="strategy-toolbar"><label class="search-field">${icon('search')}<input id="strategy-search" type="search" placeholder="搜索策略、发起人、盟约或效果" aria-label="搜索策略资料" value="${escape(strategyFilters.query)}"/></label><label class="strategy-pact-select" for="strategy-pact-filter"><span>关联盟约</span><select id="strategy-pact-filter"><option value="">全部盟约</option>${[['core', '核心盟约'], ['additional', '附加盟约']].map(([category, label]) => `<optgroup label="${label}">${traits.filter(t => t.category === category).map(t => `<option value="${escape(t.id)}" ${strategyFilters.trait === t.id ? 'selected' : ''}>${escape(t.name)}</option>`).join('')}</optgroup>`).join('')}</select>${icon('down')}</label></div><div class="strategy-filter-row"><div id="strategy-types" class="strategy-types" role="group" aria-label="按策略使用方式筛选"></div><span id="strategy-result-count" aria-live="polite"></span></div><div id="strategy-catalog" class="strategy-catalog"></div></section>`;
+}
+
+function renderStrategyCatalog() {
+  if (!$('#strategy-catalog')) return;
+  const facets = filterStrategies(strategies, { ...strategyFilters, usage: '' });
+  $('#strategy-types').innerHTML = [['', '全部'], ['被动', '被动'], ['点击', '点击使用'], ['拖拽', '拖拽使用']].map(([usage, label]) => `<button class="strategy-type ${strategyFilters.usage === usage ? 'active' : ''}" data-action="strategy-type" data-usage="${usage}" aria-pressed="${strategyFilters.usage === usage}">${label}<span>${usage ? facets.filter(s => s.usageTypes.includes(usage)).length : facets.length}</span></button>`).join('');
+  const visible = filterStrategies(strategies, strategyFilters);
+  $('#strategy-result-count').textContent = `${visible.length} 项策略`;
+  $('#strategy-catalog').innerHTML = visible.length ? visible.map(item => `<button class="strategy-card" data-action="strategy-info" data-id="${escape(item.id)}"><span class="strategy-card-heading"><span class="strategy-art">${strategyIcon(item)}</span><span class="strategy-name"><strong>${escape(item.name)}</strong><small>发起人 · ${escape(item.initiator)}</small></span><span class="strategy-life"><b>${item.initialLife}</b><small>初始生命</small></span></span><span class="strategy-preview">${escape(item.effect)}</span><span class="strategy-card-footer"><span>${item.usageTypes.map(type => `<span class="strategy-usage">${type}</span>`).join('')}</span><span class="strategy-unlock-preview">${escape(item.unlock)}</span>${icon('chevron')}</span></button>`).join('') : `<div class="strategy-empty">${icon('search')}<h3>没有匹配的策略</h3><p>试试其他关键词，或调整使用方式与盟约筛选。</p><button class="text-button" data-action="reset-strategy-filters">清除筛选 ${icon('arrow')}</button></div>`;
+}
+
+function showStrategy(id) {
+  const item = strategies.find(s => s.id === id); if (!item) return;
+  openDialog(`<div class="equipment-dialog strategy-dialog">${dialogClose()}<div class="strategy-detail-heading"><span class="strategy-detail-art">${strategyIcon(item)}</span><div><span class="eyebrow">PRTS STRATEGY</span><h2>${escape(item.name)}</h2><p>发起人 · ${escape(item.initiator)}</p></div></div><div class="strategy-detail-meta"><span>初始生命值 <strong>${item.initialLife}</strong></span><span>${item.usageTypes.map(type => `<span class="strategy-usage">${type === '被动' ? '被动效果' : type + '使用'}</span>`).join('')}</span></div><section class="strategy-unlock"><h3>解锁条件</h3><p>${escape(item.unlock)}</p></section><section class="strategy-full-effect"><h3>策略效果</h3><p>${escape(item.effect)}</p></section>${item.traitIds.length ? `<section class="strategy-related"><h3>关联盟约</h3><div class="detail-traits">${item.traitIds.map(traitChip).join('')}</div></section>` : ''}<a class="source-link" href="${escape(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">PRTS 策略报告 ${icon('arrow')}</a></div>`, `${item.name}策略资料`);
+}
+
 function referenceShell() {
   return `<div class="reference-sections">${[['core', '核心盟约'], ['additional', '附加盟约']].map(([category, label]) => `<section class="panel reference-panel"><div class="section-heading"><div class="section-title">${icon('sparkles')}<h2>${label}</h2><span class="count-label">${traits.filter(t => t.category === category).length}</span></div></div><div class="pact-reference-grid">${traits.filter(t => t.category === category).map(t => `<button class="pact-reference-card" data-action="trait" data-id="${escape(t.id)}"><span class="trait-emblem">${icon(t.icon)}</span><span><strong>${escape(t.name)}</strong><small>${t.activationRequired} ${t.countMode === 'elite' ? '名精锐' : '人'}激活${t.maxCount ? ' · 仅单人有效' : ''}</small></span>${icon('chevron')}</button>`).join('')}</div></section>`).join('')}<section class="panel reference-panel equipment-reference-panel"><div class="section-heading"><div class="section-title">${icon('shield')}<h2>装备资料</h2><span class="count-label">${equipment.length}</span></div><span class="section-hint">点击查看效果</span></div><label class="search-field equipment-search">${icon('search')}<input id="equipment-search" type="search" placeholder="搜索装备、效果或转化盟约" aria-label="搜索装备资料" value="${escape(equipmentQuery)}"/></label><div id="equipment-catalog" class="equipment-catalog"></div></section></div>`;
 }
@@ -385,6 +415,9 @@ function handleClick(event) {
   if (action === 'feature-filter') { filters.feature = button.dataset.feature; renderCards(); renderFilterStatus(); $(`[data-action="feature-filter"][data-feature="${CSS.escape(filters.feature)}"]`)?.focus({ preventScroll: true }); }
   if (action === 'configure') showMemberEditor(id);
   if (action === 'equipment-info') showEquipment(id);
+  if (action === 'strategy-info') showStrategy(id);
+  if (action === 'strategy-type') { strategyFilters.usage = button.dataset.usage; renderStrategyCatalog(); }
+  if (action === 'reset-strategy-filters') { strategyFilters = { query: '', usage: '', trait: '' }; renderPage(); $('#strategy-search').focus(); }
   if (action === 'reset-equipment') { loadout[id] = []; persist(); renderDynamic(); showMemberEditor(id); }
   if (action === 'apply-capacity') { capacityExpanded = true; persist(); closeDialog(); view = 'builder'; history.replaceState(null, '', sitePath()); renderPage(); toast('已使用人事部文档：小队上限 9 人'); }
   if (action === 'details') showCard(id, button.dataset.traitId || '', $('#dialog').scrollTop);
@@ -405,10 +438,10 @@ function handleClick(event) {
 
 async function init() {
   try {
-    const responses = await Promise.all(['cards', 'traits', 'sources', 'equipment'].map(name => fetch(sitePath(`data/${name}.json`))));
+    const responses = await Promise.all(['cards', 'traits', 'sources', 'equipment', 'strategies'].map(name => fetch(sitePath(`data/${name}.json`))));
     if (responses.some(r => !r.ok)) throw new Error('卡牌数据加载失败，请检查 data 目录。');
-    [cards, traits, sourceInfo, equipment] = await Promise.all(responses.map(r => r.json()));
-    for (const item of [...cards, ...traits, ...equipment]) {
+    [cards, traits, sourceInfo, equipment, strategies] = await Promise.all(responses.map(r => r.json()));
+    for (const item of [...cards, ...traits, ...equipment, ...strategies]) {
       for (const field of ['image', 'artImage']) if (item[field]) item[field] = localAsset(item[field]);
     }
     validateData(cards, traits);

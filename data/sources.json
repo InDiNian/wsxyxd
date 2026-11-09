@@ -42,5 +42,8 @@
     "baseCapacity": 8,
     "expandedCapacity": 9,
     "equipmentSlots": 2
-  }
+  },
+  "strategyCount": 61,
+  "strategySourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+  "strategyImportedAt": "2026-11-09T11:26:19.094365+00:00"
 }

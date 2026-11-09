@@ -26,6 +26,7 @@ npm run preview
 - 10 个核心盟约、16 个附加盟约及其真实激活人数、人数条件、层数条件。
 - 每位干员的普通 / 精锐特质和特质分类；详情提供职业特性和常规技能等级 4 / 7 作为独立参考。
 - 70 件装备，包括基础 / 进阶效果、价格、等阶及本地图标。
+- 61 项策略，包括发起人、初始生命值、使用方式、完整效果、解锁条件和本地头像。
 - 141 位精二头像与默认完整立绘均为本地 WebP。干员美术资源 © 鹰角网络，来源为 PRTS 对应页面。
 
 默认名单沿用主页面文字速查；原型替代干员不重复列入。记录页另有两个策略专属 / 特殊单位（盟约·辅助干员、“暴躁铁皮”），不作为默认可招募干员，其名称记录于导入报告。
@@ -53,6 +54,8 @@ npm run preview
 
 「盟约与装备」页面提供只读的全部盟约规则与 70 件装备；可搜索装备名、效果和同构转化盟约。
 
+「策略图鉴」提供本期 61 项策略，按策略名、发起人、盟约、效果和解锁条件搜索，支持关联盟约与被动 / 点击 / 拖拽使用方式组合筛选；列表展示初始生命值和效果摘要，点击查看完整条件、升级说明与关联盟约。使用方式筛选计数忽略自身，兼有两种方式的策略会分别计入对应类型。此入口用于查阅资料。
+
 ## 更新来源数据
 
 参考数据导入脚本需 Python 的 `requests`、`beautifulsoup4`、`lxml`、`Pillow`。响应缓存在 `.cache/prts/` 中；需要更新来源时删除对应缓存文件再导入。
@@ -61,9 +64,12 @@ npm run preview
 python3 scripts/import-prts.py
 python3 scripts/import-elite2-avatars.py
 python3 scripts/import-pact-records.py
+python3 scripts/import-strategies.py
 ```
 
 第一步更新名单与常规干员资料；第二步更新精二头像；第三步重新接入模式归属、普通 / 精锐特质、人数规则与装备。既有模式资料和精二头像在第一步会保留。
+
+第四步从同一份盟约记录页面快照导入策略报告、解锁条件和发起人头像，避免混用旧期策略数值。策略数量发生变化时，导入脚本会停止并提示复核。
 
 `data/mode-import.json` 记录导入数量、特殊单位排除项和图标下载异常。完整核心盟约成员记录见 `data/core-pacts.json` 与 `docs/core-pacts.md`。
 
@@ -72,17 +78,21 @@ python3 scripts/import-pact-records.py
 ```text
 src/app.js                   页面、队员装备配置、只读资料和当前编辑状态
 src/domain.js                数据校验、装备转化、盟约计数、筛选和迁移
+src/strategies.js            策略关键词、使用方式与关联盟约组合筛选
 src/styles.css               手机和桌面布局
 scripts/server.mjs           本地静态服务，不提供资料写入 API
 scripts/import-prts.py       默认名单、常规技能和默认立绘导入
 scripts/import-elite2-avatars.py 精二头像导入
 scripts/import-pact-records.py 模式盟约、特质、装备和图标导入
+scripts/import-strategies.py 策略效果、解锁条件与发起人头像导入
 data/cards.json              干员与模式归属、普通 / 精锐特质
 data/traits.json             核心 / 附加盟约条件和效果
 data/equipment.json          装备与同构转化规则
+data/strategies.json         策略资料
 data/sources.json            来源、范围、时间和小队规则
 assets/operators/            本地干员资源
 assets/equipment/            本地装备图标
+assets/strategies/           本地策略发起人头像
 ```
 
 

@@ -1,0 +1,1019 @@
+[
+  {
+    "id": "strategy-6e5261e6b6b8",
+    "name": "众志合一",
+    "initiator": "阿米娅",
+    "initialLife": 25,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：场上存在3、4或5种以上激活盟约时，所有干员攻击力、生命上限分别+20%/30%/40%",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/5/5d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%98%BF%E7%B1%B3%E5%A8%85.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%98%BF%E7%B1%B3%E5%A8%85.png?v=sncxk7urgz96my5jxz144bz4gyu6hh0",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-6e5261e6b6b8.webp"
+  },
+  {
+    "id": "strategy-cd006df6c7d7",
+    "name": "坚不可摧",
+    "initiator": "歌利亚",
+    "initialLife": 40,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：初始目标生命值为40点",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/13/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%AD%8C%E5%88%A9%E4%BA%9A.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%AD%8C%E5%88%A9%E4%BA%9A.png?v=hknvmjfa0g7lt2787g3vulvmj89clkn",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-cd006df6c7d7.webp"
+  },
+  {
+    "id": "strategy-8f4ada0ae49e",
+    "name": "加急调派",
+    "initiator": "大帝",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：我方干员每次部署后都会使自身在本场战斗内的再部署时间-50%",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/e/ec/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A7%E5%B8%9D.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A7%E5%B8%9D.png?v=nrq20vyu0evdp64swlbzajwv2gv05om",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-8f4ada0ae49e.webp"
+  },
+  {
+    "id": "strategy-bd433dca3d7f",
+    "name": "食腐之蝶",
+    "initiator": "卡莱莎",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：我方干员被击倒时，场上剩余我方单位攻击力+20%（最大+200%，持续至被击倒或战斗结束）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/0d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%8D%A1%E8%8E%B1%E8%8E%8E.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%8D%A1%E8%8E%B1%E8%8E%8E.png?v=2jzpqu0qjbomkw9qwj7zxqqrw52fay6",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-bd433dca3d7f.webp"
+  },
+  {
+    "id": "strategy-9d00cfc8bf8c",
+    "name": "统御号令",
+    "initiator": "伊奥莱塔·罗素",
+    "initialLife": 29,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：战斗开始时，场上每有1名精锐干员，精锐干员的攻击力、生命上限+10%",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/2/28/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BC%8A%E5%A5%A5%E8%8E%B1%E5%A1%94%C2%B7%E7%BD%97%E7%B4%A0.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BC%8A%E5%A5%A5%E8%8E%B1%E5%A1%94%C2%B7%E7%BD%97%E7%B4%A0.png?v=axl4v13swa13x4iph6swk2sjvmd4kpu",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-9d00cfc8bf8c.webp"
+  },
+  {
+    "id": "strategy-d462a76db8e6",
+    "name": "意志鼓舞",
+    "initiator": "百炼嘉维尔",
+    "initialLife": 27,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，下次战斗开始时立即击倒并复活，并获得额外2次复活次数",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/66/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%99%BE%E7%82%BC%E5%98%89%E7%BB%B4%E5%B0%94.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%99%BE%E7%82%BC%E5%98%89%E7%BB%B4%E5%B0%94.png?v=ak26sjgqpmdpdupq8boqrp78h5dlpma",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-d462a76db8e6.webp"
+  },
+  {
+    "id": "strategy-e6a555281e8b",
+    "name": "内部货源",
+    "initiator": "天空盒",
+    "initialLife": 28,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗0）：下一件购买的装备价格-1（最多减至0）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d8/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A9%E7%A9%BA%E7%9B%92.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A9%E7%A9%BA%E7%9B%92.png?v=dkcc4gl2j7vo51qdsk8eby1gozluoqj",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-e6a555281e8b.webp"
+  },
+  {
+    "id": "strategy-710cc4d4cedb",
+    "name": "纸片替身",
+    "initiator": "风丸",
+    "initialLife": 25,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名调度中心内的干员，使其变为相同等阶的随机干员（每回合限2次）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d1/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%A3%8E%E4%B8%B8.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%A3%8E%E4%B8%B8.png?v=8ixoapq8j2zpzxtays1zygec81usu6p",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-710cc4d4cedb.webp"
+  },
+  {
+    "id": "strategy-1ae8c0b9f8b6",
+    "name": "溃心领域",
+    "initiator": "妮芙",
+    "initialLife": 28,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一个可用地块，战斗开始后首次经过该地块的敌人获得恐惧，持续3秒（每回合限1次）\n第4、8、12回合时升级，增加使用次数",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/b/bd/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A6%AE%E8%8A%99.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A6%AE%E8%8A%99.png?v=lgscpqt7hz56ocld0qn590ics97r5fq",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-1ae8c0b9f8b6.webp"
+  },
+  {
+    "id": "strategy-d3cee0a3515f",
+    "name": "幻画为真",
+    "initiator": "夕",
+    "initialLife": 28,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，获得他的复制体，包括精锐状态和携带的装备（每场模拟限1次）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d5/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%95.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%95.png?v=sz3wyy9zrth78kozkr8nll9fvzpdt39",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-d3cee0a3515f.webp"
+  },
+  {
+    "id": "strategy-af0dbd10c45c",
+    "name": "条文修正",
+    "initiator": "但书",
+    "initialLife": 26,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "第4回合解锁\n拖拽使用（消耗0）：选择一名我方干员，使该干员已激活的所有盟约层数+9（冷却3回合）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/42/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BD%86%E4%B9%A6.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BD%86%E4%B9%A6.png?v=kpti6lyfkftk86jkdj8dnefawt6qitl",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-af0dbd10c45c.webp"
+  },
+  {
+    "id": "strategy-98494e9fdcde",
+    "name": "全场聚焦",
+    "initiator": "大嘴莫布",
+    "initialLife": 26,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗1）：选择一名我方干员，下次战斗开始时变为精锐干员，持续至战斗结束",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/0d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A7%E5%98%B4%E8%8E%AB%E5%B8%83.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%A7%E5%98%B4%E8%8E%AB%E5%B8%83.png?v=66fthls00u8z3cx0e9bt4v2me7b3iv5",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-98494e9fdcde.webp"
+  },
+  {
+    "id": "strategy-aafd253f21ce",
+    "name": "集结指示",
+    "initiator": "杰西卡",
+    "initialLife": 22,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：在第4、7、10、13回合进入休整期时获得1个<寻呼模块>\n<寻呼模块>：装备时销毁，在调度中心出现至多3名拥有该干员第一盟约的其他干员，免费获取其中1名（等阶不高于当前调度中心）",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/8/81/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9D%B0%E8%A5%BF%E5%8D%A1.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9D%B0%E8%A5%BF%E5%8D%A1.png?v=r1bl8jwm1q659nk40hveqs96yl1qhv5",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-aafd253f21ce.webp"
+  },
+  {
+    "id": "strategy-637562a5e4f9",
+    "name": "重点监护",
+    "initiator": "华法琳",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：战斗开始时，使场上每个不同等阶的1个随机我方干员所属的已激活盟约层数+1\n调度中心等级达到3级、5级时升级使盟约层数额外+1",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/9/94/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%8D%8E%E6%B3%95%E7%90%B3.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%8D%8E%E6%B3%95%E7%90%B3.png?v=qwu9xjn6em7wstywg8ngbp0kdeyre6d",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-637562a5e4f9.webp"
+  },
+  {
+    "id": "strategy-c0a251a3a215",
+    "name": "药枚实验",
+    "initiator": "桑葚",
+    "initialLife": 24,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，在下次战斗开始时获得效果：每次攻击时有20%的概率获得1层护盾（最多1层）\n第7回合时效果升级",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/fe/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%A1%91%E8%91%9A.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%A1%91%E8%91%9A.png?v=t4j510i1c48ihu9jxbk91l9qfm4ul8m",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-c0a251a3a215.webp"
+  },
+  {
+    "id": "strategy-8609781a3c4f",
+    "name": "全力熔铸",
+    "initiator": "奥达",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：在第3、6、9、12、14回合进入休整期时获得1件当前调度中心等级的随机装备",
+    "unlock": "初始解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/e/e8/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A5%A5%E8%BE%BE.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A5%A5%E8%BE%BE.png?v=r7biu8i4ahmx57dmu0hk9idfs20njnv",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-8609781a3c4f.webp"
+  },
+  {
+    "id": "strategy-9874474c03e5",
+    "name": "以己之长",
+    "initiator": "陈",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：所有干员造成的物理和法术伤害变为弱点伤害（根据敌人的防御力和法术抗性变更伤害类型），精锐干员额外获得攻击力+16%，攻击速度+16",
+    "unlock": "通关任意模拟1次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/a4/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%99%88.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%99%88.png?v=kzvobe7bmlthy8e4jdce8xgsal807kp",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-9874474c03e5.webp"
+  },
+  {
+    "id": "strategy-56cd1802b705",
+    "name": "得闲饮茶",
+    "initiator": "老鲤",
+    "initialLife": 27,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：第1、2回合的资金暂存至第3回合发放；第3回合进入休整期时，获得2、4阶随机干员各1名",
+    "unlock": "通关任意模拟2次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/43/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%80%81%E9%B2%A4.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%80%81%E9%B2%A4.png?v=f513tdcz327e6oyv3trx2fy9kyxet4x",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-56cd1802b705.webp"
+  },
+  {
+    "id": "strategy-01687acf535b",
+    "name": "协力共进",
+    "initiator": "芬",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：第8、10、12、14回合进入休整期时获得1个<信标>\n<信标>：装备时销毁携带干员，在调度中心出现2名同等阶干员，免费获得其中1名；被销毁干员在下回合传递给对应盟约人数最多的队友",
+    "unlock": "通关任意模拟3次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/48/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%8A%AC.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%8A%AC.png?v=4o92ga3op3zcbtmxn6t7mu1fdgo29g8",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-01687acf535b.webp"
+  },
+  {
+    "id": "strategy-111f1e7ba03c",
+    "name": "外勤医疗",
+    "initiator": "Touch",
+    "initialLife": 28,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：所有玩家场上出现一名<预备干员-医疗>；战斗开始时，若场上至少有2名精锐干员，则替换为<Touch>",
+    "unlock": "通关任意模拟3次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/62/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Touch.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Touch.png?v=g1d5empr1qut5pgq00vkfze8hjft9w1",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-111f1e7ba03c.webp"
+  },
+  {
+    "id": "strategy-0ae6588c1595",
+    "name": "暴躁铁皮",
+    "initiator": "森蚺",
+    "initialLife": 29,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：第1回合获得1名可以装备4件装备的特殊干员<“暴躁铁皮”>",
+    "unlock": "通关任意模拟5次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/44/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%A3%AE%E8%9A%BA.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%A3%AE%E8%9A%BA.png?v=tcdyzvos0ehoj7rbqhmfx8r5xqsdutr",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-0ae6588c1595.webp"
+  },
+  {
+    "id": "strategy-1a1ecdf7a8fa",
+    "name": "宝藏探机",
+    "initiator": "寻宝人",
+    "initialLife": 22,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗1）：选择一个可用地块，部署1个<“模拟宝藏”>（冷却3回合）\n<“模拟宝藏”>：被敌人触碰就会永久消失，战斗结束时若仍存在则获得额外1资金",
+    "unlock": "通关任意模拟5次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/4b/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%AF%BB%E5%AE%9D%E4%BA%BA.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%AF%BB%E5%AE%9D%E4%BA%BA.png?v=durndodubzfvlxei9oab8cgqslw5uqe",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-1a1ecdf7a8fa.webp"
+  },
+  {
+    "id": "strategy-65a277529e8d",
+    "name": "至纯凝结",
+    "initiator": "缪尔赛思",
+    "initialLife": 28,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，立即使该干员晋升为精锐干员（每场模拟限1次）",
+    "unlock": "通关任意模拟8次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d2/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D.png?v=phcr4o3c0m372chanezta66x1b4kea3",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-65a277529e8d.webp"
+  },
+  {
+    "id": "strategy-c8b9d18db878",
+    "name": "消解空间",
+    "initiator": "Misery",
+    "initialLife": 27,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，下场战斗开始后首次受到伤害时使其击倒，并召唤整备区最右侧干员",
+    "unlock": "通关任意模拟8次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/44/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Misery.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Misery.png?v=dh83zowfgilbhxnhz8gq8p7s58xtyhp",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-c8b9d18db878.webp"
+  },
+  {
+    "id": "strategy-14ae30ff78d5",
+    "name": "变形同构",
+    "initiator": "“变形者集群”",
+    "initialLife": 22,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每5回合获得1件特殊装备<变形同构体>\n<变形同构体>：与特定装备一同装备时装备者将视为特定盟约成员",
+    "unlock": "通关任意模拟10次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/c/c7/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E2%80%9C%E5%8F%98%E5%BD%A2%E8%80%85%E9%9B%86%E7%BE%A4%E2%80%9D.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E2%80%9C%E5%8F%98%E5%BD%A2%E8%80%85%E9%9B%86%E7%BE%A4%E2%80%9D.png?v=jzde67bfgycvw45b883h4okd520em06",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-14ae30ff78d5.webp"
+  },
+  {
+    "id": "strategy-6603d6130e3c",
+    "name": "私募基金",
+    "initiator": "小贾斯汀",
+    "initialLife": 23,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗0）：随机获得1-6资金（冷却回合数等同于获得资金）",
+    "unlock": "通关【标准模拟】解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/2/26/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B0%8F%E8%B4%BE%E6%96%AF%E6%B1%80.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B0%8F%E8%B4%BE%E6%96%AF%E6%B1%80.png?v=mh3w2axmluh9hcdq7pv6nh8qqvv181f",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-6603d6130e3c.webp"
+  },
+  {
+    "id": "strategy-1f83ddc4fedc",
+    "name": "御守之力",
+    "initiator": "铃兰",
+    "initialLife": 20,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，触发该干员的<获得时>类特质",
+    "unlock": "通关【绝境模拟】解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/11/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%93%83%E5%85%B0.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%93%83%E5%85%B0.png?v=if83ov9ifjwo2mnkcgqs487xbova1lx",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-1f83ddc4fedc.webp"
+  },
+  {
+    "id": "strategy-b3f973f79033",
+    "name": "强制休整",
+    "initiator": "苏苏洛",
+    "initialLife": 21,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，使该干员的<休整期结束时>类特质本回合可以额外触发一次",
+    "unlock": "通关【绝境模拟】解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/f8/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%8B%8F%E8%8B%8F%E6%B4%9B.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%8B%8F%E8%8B%8F%E6%B4%9B.png?v=c31o0s7yezdkbiqxfm4rmvtdjb8k3hd",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-b3f973f79033.webp"
+  },
+  {
+    "id": "strategy-23d53dfdcdae",
+    "name": "不稳定要素",
+    "initiator": "昆图斯",
+    "initialLife": 24,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "第4回合解锁\n拖拽使用（消耗0）：选择一名我方干员，立即使其变为更高一阶的随机干员（最高不超过6阶）",
+    "unlock": "通关【险境模拟】解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d4/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%98%86%E5%9B%BE%E6%96%AF.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%98%86%E5%9B%BE%E6%96%AF.png?v=07xjbvrm806z7b1aepl2cwhfwxugse4",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-23d53dfdcdae.webp"
+  },
+  {
+    "id": "strategy-d2e5cde2e288",
+    "name": "献身护卫",
+    "initiator": "信仰搅拌机",
+    "initialLife": 27,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "第4回合解锁\n点击使用（消耗0）：自身目标生命值降至与场上最低的玩家相同并获得等同损失生命值的资金（至多10资金），在<休整期结束时>为该玩家回复等额目标生命值",
+    "unlock": "通关任意联合模拟5次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/5/56/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BF%A1%E4%BB%B0%E6%90%85%E6%8B%8C%E6%9C%BA.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BF%A1%E4%BB%B0%E6%90%85%E6%8B%8C%E6%9C%BA.png?v=bbu0a0ql6imewxv3twg75enjwjsk5r2",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-d2e5cde2e288.webp"
+  },
+  {
+    "id": "strategy-ef25f8984676",
+    "name": "好多委托！",
+    "initiator": "“追随者们”",
+    "initialLife": 21,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每次进入休整期时，从2个随机指令中选择1个并替换当前指令",
+    "unlock": "通关任意联合模拟10次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/a9/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E2%80%9C%E8%BF%BD%E9%9A%8F%E8%80%85%E4%BB%AC%E2%80%9D.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E2%80%9C%E8%BF%BD%E9%9A%8F%E8%80%85%E4%BB%AC%E2%80%9D.png?v=2x4q5lhnfz042pdxsb9shvwyv1n3brw",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-ef25f8984676.webp"
+  },
+  {
+    "id": "strategy-dfd9d9dc73b1",
+    "name": "利滚利",
+    "initiator": "坎诺特",
+    "initialLife": 27,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合剩余的资金可以继承，剩余至少5资金时，每回合额外获得1资金",
+    "unlock": "消耗资金累计达到100时解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/15/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%9D%8E%E8%AF%BA%E7%89%B9.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%9D%8E%E8%AF%BA%E7%89%B9.png?v=dyg575yftbpedzqw3p8hkt70njue7kl",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-dfd9d9dc73b1.webp"
+  },
+  {
+    "id": "strategy-a56f7540529f",
+    "name": "“神秘顾客”",
+    "initiator": "鸭爵",
+    "initialLife": 29,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：从第5回合起，你和队友遭遇的部分敌人可能会替换为<鸭爵>、<高普尼克>、<流泪小子>、<圆仔>，击倒这些敌人可以获得1资金奖励（包括联防阶段）",
+    "unlock": "消耗资金累计达到200时解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/0d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%B8%AD%E7%88%B5.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%B8%AD%E7%88%B5.png?v=q83hpmxzfdsfcok0pqqlpcnii826x3u",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-a56f7540529f.webp"
+  },
+  {
+    "id": "strategy-4e49d4e843b5",
+    "name": "最佳品味",
+    "initiator": "琳琅诗怀雅",
+    "initialLife": 24,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "消耗资金达到60时解锁\n点击使用（消耗0）：随机获取当前调度中心内的1名干员\n消耗资金达到120时升级为获取2名",
+    "unlock": "消耗资金累计达到1000时解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/c/cb/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%90%B3%E7%90%85%E8%AF%97%E6%80%80%E9%9B%85.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%90%B3%E7%90%85%E8%AF%97%E6%80%80%E9%9B%85.png?v=240e5qhdsegv4kiujuxgd7x631us5oj",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-4e49d4e843b5.webp"
+  },
+  {
+    "id": "strategy-77e854de790c",
+    "name": "替身娃娃",
+    "initiator": "巫恋",
+    "initialLife": 25,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合首次出售初始干员时，改为与调度中心中随机1名干员交换",
+    "unlock": "累计出售任意干员达到50个解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/4a/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B7%AB%E6%81%8B.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B7%AB%E6%81%8B.png?v=5onyyk9no1vaoomnzyn1wx6im092gos",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-77e854de790c.webp"
+  },
+  {
+    "id": "strategy-e314944c29a4",
+    "name": "东之极道",
+    "initiator": "三船光平",
+    "initialLife": 22,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，将其出售并为所有已激活盟约叠加等同于该干员等阶的层数",
+    "unlock": "累计出售任意干员达到100个解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/2/23/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%B8%89%E8%88%B9%E5%85%89%E5%B9%B3.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%B8%89%E8%88%B9%E5%85%89%E5%B9%B3.png?v=m8q7whtt3jmunyzw597zl9cdi4val3i",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-e314944c29a4.webp"
+  },
+  {
+    "id": "strategy-0c97d36c787a",
+    "name": "人才锁定",
+    "initiator": "雅拉",
+    "initialLife": 24,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗1）：刷新调度中心，必定包含1名比当前调度中心等级更高一阶（最高不超过6阶）的干员（每回合限3次）",
+    "unlock": "累计刷新调度中心100次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/6e/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%9B%85%E6%8B%89.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E9%9B%85%E6%8B%89.png?v=l0n2be0e4mo32bsvoas4ofhtctaacqa",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-0c97d36c787a.webp"
+  },
+  {
+    "id": "strategy-8e5b6f4d30c1",
+    "name": "专享情报",
+    "initiator": "渡桥",
+    "initialLife": 30,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗3）：进行一次特殊刷新：此次刷新出现的干员优先为已部署在场上的干员（每场模拟限1次）",
+    "unlock": "累计刷新调度中心200次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/7/77/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%B8%A1%E6%A1%A5.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%B8%A1%E6%A1%A5.png?v=082e4jv13ul6i0uf7261mbxit71dpg5",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-8e5b6f4d30c1.webp"
+  },
+  {
+    "id": "strategy-a5102b5cb696",
+    "name": "精巧设计",
+    "initiator": "Mechanist",
+    "initialLife": 29,
+    "usageTypes": [
+      "被动",
+      "点击"
+    ],
+    "effect": "被动效果：每回合首次装备合并进阶时，在调度中心出现3件装备（可能出现更高一阶的装备）免费获取其中1件\n点击使用（消耗0）：使调度中心出现1件新的装备并替换（每回合限2次）",
+    "unlock": "累计获得任意装备50个解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/a4/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Mechanist.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Mechanist.png?v=trr65hpwtm82l36nlohjbln33iesuld",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-a5102b5cb696.webp"
+  },
+  {
+    "id": "strategy-2478ab6426d3",
+    "name": "电气化！",
+    "initiator": "布丁",
+    "initialLife": 23,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗1）：选择调度中心的一件装备使其立刻销毁，并在下次战斗开始时使场上所有还有空栏位的干员暂时获得该装备直到战斗结束（无法对<装备时销毁>的装备使用）",
+    "unlock": "累计获得任意装备100个解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/fe/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B8%83%E4%B8%81.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%B8%83%E4%B8%81.png?v=kska7r92xt9zxwleuui2i27fccnh29s",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-2478ab6426d3.webp"
+  },
+  {
+    "id": "strategy-b1e0e915e0bd",
+    "name": "打包速递",
+    "initiator": "拜松",
+    "initialLife": 23,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗9）：获得当前调度中心中的所有干员，每回合休整期结束时指令消耗资金-1，使用后指令重置并可再次使用",
+    "unlock": "累计升级调度中心30次解锁",
+    "traitIds": [],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d3/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%8B%9C%E6%9D%BE.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%8B%9C%E6%9D%BE.png?v=h0fwfo4ksmt3ui8cfe6csi5rfiajc3r",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-b1e0e915e0bd.webp"
+  },
+  {
+    "id": "strategy-d8c975db7ec6",
+    "name": "优等生",
+    "initiator": "Pith",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：第1回合获得1名可以造成神经、灼燃、凋亡损伤的特殊干员，其属于【调和】盟约\n【调和】：激活时使场上核心盟约的激活人数+1，【调和】干员享受已激活的核心盟约的效果",
+    "unlock": "通关时的结算阵容中，包含任意【调和】干员解锁",
+    "traitIds": [
+      "additional-harmony"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/6d/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Pith.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_Pith.png?v=h0zo0lv61qhqzr0wwrh4zyuecviqpdf",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-d8c975db7ec6.webp"
+  },
+  {
+    "id": "strategy-e5521fd2e2c2",
+    "name": "正直教官",
+    "initiator": "坚雷",
+    "initialLife": 25,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗0）：选择一名我方干员，使其在下场战斗中卫戍能力的叠层上限提升，数量等同于当前回合数",
+    "unlock": "通关时的结算阵容中，包含任意3名【助力】干员解锁",
+    "traitIds": [
+      "additional-support"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/0/02/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%9D%9A%E9%9B%B7.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%9D%9A%E9%9B%B7.png?v=rwjys23u26jqxcstf5dgynrq2uxw2b9",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-e5521fd2e2c2.webp"
+  },
+  {
+    "id": "strategy-34a075b8e2ed",
+    "name": "二重奏",
+    "initiator": "复奏",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合首次晋升精锐干员时，获得1次额外的晋升奖励",
+    "unlock": "通关时的结算阵容中，包含任意2名【奇迹】干员解锁",
+    "traitIds": [
+      "additional-miracle"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/c/c5/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%8D%E5%A5%8F.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A4%8D%E5%A5%8F.png?v=g98fms0x92y4xe51j98n0wnprhgl7o6",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-34a075b8e2ed.webp"
+  },
+  {
+    "id": "strategy-519d28f12c56",
+    "name": "黑白相易",
+    "initiator": "望",
+    "initialLife": 23,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "拖拽使用（消耗1）：选择一名我方干员移除，获得1名不高于该干员等阶的【炎】干员\n<在场6名不同【炎】干员> 效果替换为战斗开始时收集【炎】干员部分属性召唤“炎佑”\n<在场9名不同【炎】干员> 效果改为召唤两只“炎佑”",
+    "unlock": "累计获得50名【炎】干员解锁",
+    "traitIds": [
+      "core-yan"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/7/78/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9C%9B.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9C%9B.png?v=t7hlfudmhsorui8875tve62zaapjo3f",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-519d28f12c56.webp"
+  },
+  {
+    "id": "strategy-11696d8cc3f6",
+    "name": "广交豪杰",
+    "initiator": "杜遥夜",
+    "initialLife": 26,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗1）：刷新调度中心，优先刷新出1名【炎】干员（每回合限2次）",
+    "unlock": "通关时的结算阵容中，包含6名【炎】干员解锁",
+    "traitIds": [
+      "core-yan"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/68/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9D%9C%E9%81%A5%E5%A4%9C.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%9D%9C%E9%81%A5%E5%A4%9C.png?v=2e8dh1unidvhrlgu4rbptr7a1gyfrf2",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-11696d8cc3f6.webp"
+  },
+  {
+    "id": "strategy-d5ce69754d12",
+    "name": "沙洲梦魇",
+    "initiator": "娜仁图亚",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：获得3名【萨尔贡】干员后使当前调度中心升级消耗资金-3，调度中心每个等级至多生效1次\n<在场6名不同【萨尔贡】干员> 效果替换为【萨尔贡】干员开启技能会使所有【萨尔贡】干员攻击力增加",
+    "unlock": "累计获得50名【萨尔贡】干员解锁",
+    "traitIds": [
+      "core-sargon"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/1b/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%A8%9C%E4%BB%81%E5%9B%BE%E4%BA%9A.png?v=e1wjr1rk6nndd24vihiofcn2fsi2r3y",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-d5ce69754d12.webp"
+  },
+  {
+    "id": "strategy-7798db62b57b",
+    "name": "博学多通",
+    "initiator": "佩佩",
+    "initialLife": 23,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：升级调度中心至2、4和6级后，获得1次特殊刷新：此次刷新出现的干员优先为【萨尔贡】干员",
+    "unlock": "通关时的结算阵容中，包含6名【萨尔贡】干员解锁",
+    "traitIds": [
+      "core-sargon"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/d/d9/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BD%A9%E4%BD%A9.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BD%A9%E4%BD%A9.png?v=b18thidqwbcwzkatn78lnpf4k79tehp",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-7798db62b57b.webp"
+  },
+  {
+    "id": "strategy-81845d2ac672",
+    "name": "自发制造",
+    "initiator": "洛洛",
+    "initialLife": 25,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每购买3名【维多利亚】干员，获得1件随机装备（等阶不高于当前调度中心）\n<在场6名不同【维多利亚】干员> 效果替换为【维多利亚】干员技能开启后，周围八格干员同时享受该干员携带的装备效果，持续一定时间",
+    "unlock": "多场模拟中【维多利亚】盟约累计200层解锁",
+    "traitIds": [
+      "core-victoria"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/40/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%B4%9B%E6%B4%9B.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%B4%9B%E6%B4%9B.png?v=8mb0zvpmjif8igs14mohv80jlgks2hq",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-81845d2ac672.webp"
+  },
+  {
+    "id": "strategy-f0e55014802e",
+    "name": "人才盲盒",
+    "initiator": "哈洛德",
+    "initialLife": 23,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：从第4回合开始每2回合获得1名【维多利亚】干员（等阶不高于当前调度中心）",
+    "unlock": "通关时的结算阵容中，包含6名【维多利亚】干员解锁",
+    "traitIds": [
+      "core-victoria"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/14/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%93%88%E6%B4%9B%E5%BE%B7.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%93%88%E6%B4%9B%E5%BE%B7.png?v=cwdrv98dveenxphty0rohkgexlc5ixt",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-f0e55014802e.webp"
+  },
+  {
+    "id": "strategy-5a64b6f62f05",
+    "name": "猎人战法",
+    "initiator": "歌蕾蒂娅",
+    "initialLife": 23,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "调度中心等级达到4级解锁\n点击使用（消耗1）：获得1名【阿戈尔】干员（等阶不高于当前调度中心）\n<在场6名不同【阿戈尔】干员> 效果替换为前3名【阿戈尔】干员首次被击倒时召唤整备区最右侧一名可部署至当前位置的【阿戈尔】干员",
+    "unlock": "多场模拟中【阿戈尔】盟约累计200层解锁",
+    "traitIds": [
+      "core-abyssal-hunters"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/11/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%AD%8C%E8%95%BE%E8%92%82%E5%A8%85.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%AD%8C%E8%95%BE%E8%92%82%E5%A8%85.png?v=75ox3shtoc0ftepkgvf7cm9107wj4r4",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-5a64b6f62f05.webp"
+  },
+  {
+    "id": "strategy-818bab54e8d2",
+    "name": "崇高牺牲",
+    "initiator": "克莱门莎",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：【阿戈尔】干员被击倒时，使已激活的【阿戈尔】盟约叠加等同于该干员等阶的层数",
+    "unlock": "通关时的结算阵容中，包含5名【阿戈尔】干员解锁",
+    "traitIds": [
+      "core-abyssal-hunters"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/f/f6/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%85%8B%E8%8E%B1%E9%97%A8%E8%8E%8E.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%85%8B%E8%8E%B1%E9%97%A8%E8%8E%8E.png?v=aj1dk9piki6utmqu6v0db7u8dnykqiq",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-818bab54e8d2.webp"
+  },
+  {
+    "id": "strategy-bfafd0e3d545",
+    "name": "骑士团长",
+    "initiator": "焰尾",
+    "initialLife": 25,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗6）：获得1名【卡西米尔】干员（等阶不高于当前调度中心），每回合休整期结束时指令消耗资金-2，使用后指令重置并可再次使用\n<在场6名不同【卡西米尔】干员> 效果替换为【卡西米尔】干员阻挡时每2秒对周围敌人造成真实伤害并晕眩，未阻挡时攻击附带真实伤害",
+    "unlock": "累计获得50名【卡西米尔】干员解锁",
+    "traitIds": [
+      "core-kazimierz"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/1/19/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%84%B0%E5%B0%BE.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%84%B0%E5%B0%BE.png?v=bjlx1vwidjw7kumity0v3q7zxhhctr5",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-bfafd0e3d545.webp"
+  },
+  {
+    "id": "strategy-9825c2591936",
+    "name": "业务指标",
+    "initiator": "玛恩纳",
+    "initialLife": 28,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每购买1名【卡西米尔】干员，下回合开始时资金+1，每回合至多3资金",
+    "unlock": "通关时的结算阵容中，包含6名【卡西米尔】干员解锁",
+    "traitIds": [
+      "core-kazimierz"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/4/48/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%8E%9B%E6%81%A9%E7%BA%B3.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E7%8E%9B%E6%81%A9%E7%BA%B3.png?v=1qc1b5dkuamlosln6wxxcd8fqqhrrsk",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-9825c2591936.webp"
+  },
+  {
+    "id": "strategy-ed5f4d0a167a",
+    "name": "不融信念",
+    "initiator": "耶拉",
+    "initialLife": 23,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：在第4、7、10、13回合进入休整期时获得1个<谢拉格不融冰>\n<谢拉格不融冰>：造成伤害时有12%概率对目标施加1.5秒的寒冷\n<在场6名不同【谢拉格】干员> 效果替换为战场上每25秒吹过一阵寒风使敌人受到寒冷效果",
+    "unlock": "累计获得50名【谢拉格】干员解锁",
+    "traitIds": [
+      "core-kjerag"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/b/b8/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%80%B6%E6%8B%89.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%80%B6%E6%8B%89.png?v=e81z3s92lhil66w710v8g0y8bwj38e3",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-ed5f4d0a167a.webp"
+  },
+  {
+    "id": "strategy-4b6b5a27f48a",
+    "name": "雪域礼赠",
+    "initiator": "休露丝",
+    "initialLife": 23,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合首次购买的【谢拉格】干员消耗资金为1",
+    "unlock": "通关时的结算阵容中，包含6名【谢拉格】干员解锁",
+    "traitIds": [
+      "core-kjerag"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/62/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BC%91%E9%9C%B2%E4%B8%9D.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E4%BC%91%E9%9C%B2%E4%B8%9D.png?v=oyhqk2wtvvjseq4kk9b8kcphm1pf1g4",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-4b6b5a27f48a.webp"
+  },
+  {
+    "id": "strategy-bdea15a08eb8",
+    "name": "量体裁衣",
+    "initiator": "裁度",
+    "initialLife": 26,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合首次主动刷新后获得1资金\n<在场6名不同【叙拉古】干员> 效果替换为【叙拉古】干员部署后进入隐匿状态，在隐匿状态和脱离隐匿10秒内对敌人攻击时有概率造成真实伤害并恐惧目标",
+    "unlock": "累计获得50名【叙拉古】干员解锁",
+    "traitIds": [
+      "core-siracusa"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/2/23/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%A3%81%E5%BA%A6.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%A3%81%E5%BA%A6.png?v=5wmrdup3wboanwfvzifnrk6cltny6cd",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-bdea15a08eb8.webp"
+  },
+  {
+    "id": "strategy-06a2be4a433b",
+    "name": "团伙行动",
+    "initiator": "贾维",
+    "initialLife": 24,
+    "usageTypes": [
+      "被动"
+    ],
+    "effect": "被动效果：每回合内主动刷新4次调度中心后，获得1名【叙拉古】干员（等阶不高于当前调度中心），每回合至多触发1次",
+    "unlock": "通关时的结算阵容中，包含6名【叙拉古】干员解锁",
+    "traitIds": [
+      "core-siracusa"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/3/30/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%B4%BE%E7%BB%B4.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%B4%BE%E7%BB%B4.png?v=rzsrxr0g789zpbw9m80m8tbmybhv5ou",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-06a2be4a433b.webp"
+  },
+  {
+    "id": "strategy-a243cce7bf1d",
+    "name": "流动乐章",
+    "initiator": "车尔尼",
+    "initialLife": 24,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗1）：获得1名【莱塔尼亚】干员（等阶不高于当前调度中心），每次使用后指令消耗资金永久+1",
+    "unlock": "通关时的结算阵容中，包含6名【莱塔尼亚】干员解锁",
+    "traitIds": [
+      "core-leithanien"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/a/a2/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%BD%A6%E5%B0%94%E5%B0%BC.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E8%BD%A6%E5%B0%94%E5%B0%BC.png?v=r7akyro4u1zwiofj707765hpbcwlls8",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-a243cce7bf1d.webp"
+  },
+  {
+    "id": "strategy-bde5529d3825",
+    "name": "无惧风雪",
+    "initiator": "怒潮凛冬",
+    "initialLife": 26,
+    "usageTypes": [
+      "点击"
+    ],
+    "effect": "点击使用（消耗5）：获得1名【乌萨斯】干员（等阶不高于当前调度中心），每次购买【乌萨斯】干员时指令消耗资金-1，使用后指令重置并可再次使用",
+    "unlock": "通关时的结算阵容中，包含6名【乌萨斯】干员解锁",
+    "traitIds": [
+      "core-ursus"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/6/67/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%80%92%E6%BD%AE%E5%87%9B%E5%86%AC.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E6%80%92%E6%BD%AE%E5%87%9B%E5%86%AC.png?v=o0vh11tl6ka1t0odnoi0z21hap8pamu",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-bde5529d3825.webp"
+  },
+  {
+    "id": "strategy-c464517f20be",
+    "name": "出航时刻",
+    "initiator": "引星棘刺",
+    "initialLife": 23,
+    "usageTypes": [
+      "拖拽"
+    ],
+    "effect": "【伊比利亚】盟约激活人数达到4时解锁\n拖拽使用（消耗1）：选择一名调度中心内的干员，使其替换为不高于该干员等阶的【伊比利亚】干员（每回合限2次）",
+    "unlock": "通关时的结算阵容中，包含6名【伊比利亚】干员解锁",
+    "traitIds": [
+      "core-iberia"
+    ],
+    "imageSourceUrl": "https://media.prts.wiki/thumb/b/b3/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%BC%95%E6%98%9F%E6%A3%98%E5%88%BA.png/60px-%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%EF%BC%9A%E7%9B%9F%E7%BA%A6_%E7%AD%96%E7%95%A5%E5%8F%91%E8%B5%B7%E4%BA%BA_%E5%BC%95%E6%98%9F%E6%A3%98%E5%88%BA.png?v=jcjqcsa4ykfpca17bqe94v1imid3h6p",
+    "source": "PRTS",
+    "sourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
+    "image": "/assets/strategies/strategy-c464517f20be.webp"
+  }
+]
