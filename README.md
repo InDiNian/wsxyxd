@@ -99,8 +99,14 @@ assets/equipment/            本地装备图标
 
 制作人：B站 @k117777_01。
 
-在线地址：https://weishuxieyixiaodui.kindrabbit4.chatgpt.site
+GitHub Pages 目标地址：https://indinian.github.io/wsxyxd/
 
 名称和主标题统一为「卫戍协议小队规划器」。三个页面标题分别为「开始挑选阵容」「了解你的干员」「了解所用盟约与装备」。
 
 盟约面板的原生 / 装备新增干员列表使用独立的查看和入队 / 出队按钮。快捷操作不关闭面板，保留滚动位置；进入资料后可返回原盟约列表。满员时继续执行人数上限限制。
+
+## GitHub Pages 发布
+
+目标仓库名为 `wsxyxd`。账号网址保留 GitHub 用户名，项目网址为 `https://indinian.github.io/wsxyxd/`。启用仓库的 Settings → Pages → GitHub Actions 后，推送到 main 会由 `.github/workflows/pages.yml` 自动检查、构建和发布。
+
+资源和导航相对当前站点根目录解析，同一份静态构建可用于根域名或 `/wsxyxd/` 子路径；发布目录为 `dist/`。本地缓存、原始填写备份和抓取缓存均不进入构建产物。

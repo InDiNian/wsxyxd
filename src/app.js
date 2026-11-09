@@ -1,4 +1,5 @@
 import { validateData, normalizeSelection, calculateLineup, filterCards, featureFacets, normalizeBuild, squadCapacity, pactProgress } from './domain.js';
+import { sitePath, localAsset } from './paths.js';
 
 const icons = {
   grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
@@ -102,7 +103,7 @@ function shell() {
       <span class="local-status"><i></i> 小队规划</span>
     </div></header>
     <main id="main" class="page"></main>
-    <footer class="site-footer"><div class="footer-identity"><strong>卫戍协议小队规划器</strong><span class="creator-credit">制作人 · B站 @k117777_01</span></div><span>卫戍协议 · 规程 <span class="footer-dot">/</span> V 0.11</span></footer>
+    <footer class="site-footer"><div class="footer-identity"><strong>卫戍协议小队规划器</strong><span class="creator-credit">制作人 · B站 @k117777_01</span></div><span>卫戍协议 · 规程 <span class="footer-dot">/</span> V 0.12</span></footer>
     <nav class="mobile-nav" aria-label="手机导航">${navButtons()}</nav>
     <dialog id="dialog" aria-label="详情"><div id="dialog-content"></div></dialog>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>`;
@@ -359,7 +360,7 @@ function handleClick(event) {
   const button = event.target.closest('[data-action]');
   if (!button || button.disabled) return;
   const { action, id } = button.dataset;
-  if (action === 'view') { view = button.dataset.view; history.replaceState(null, '', view === 'builder' ? '/' : `/?view=${view}`); renderPage(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  if (action === 'view') { view = button.dataset.view; history.replaceState(null, '', sitePath() + (view === 'builder' ? '' : `?view=${view}`)); renderPage(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   if (action === 'toggle' || action === 'detail-toggle') {
     const changed = updateSelection(selected.includes(id) ? selected.filter(x => x !== id) : [...selected, id]);
     if (action === 'detail-toggle' && changed) showCard(id, button.dataset.returnTrait, Number(button.dataset.returnScroll) || 0);
@@ -385,7 +386,7 @@ function handleClick(event) {
   if (action === 'configure') showMemberEditor(id);
   if (action === 'equipment-info') showEquipment(id);
   if (action === 'reset-equipment') { loadout[id] = []; persist(); renderDynamic(); showMemberEditor(id); }
-  if (action === 'apply-capacity') { capacityExpanded = true; persist(); closeDialog(); view = 'builder'; history.replaceState(null, '', '/'); renderPage(); toast('已使用人事部文档：小队上限 9 人'); }
+  if (action === 'apply-capacity') { capacityExpanded = true; persist(); closeDialog(); view = 'builder'; history.replaceState(null, '', sitePath()); renderPage(); toast('已使用人事部文档：小队上限 9 人'); }
   if (action === 'details') showCard(id, button.dataset.traitId || '', $('#dialog').scrollTop);
   if (action === 'trait') { showTrait(id); if (button.dataset.scroll) $('#dialog').scrollTop = Number(button.dataset.scroll) || 0; }
   if (action === 'close') closeDialog();
@@ -404,9 +405,12 @@ function handleClick(event) {
 
 async function init() {
   try {
-    const responses = await Promise.all([fetch('/data/cards.json'), fetch('/data/traits.json'), fetch('/data/sources.json'), fetch('/data/equipment.json')]);
+    const responses = await Promise.all(['cards', 'traits', 'sources', 'equipment'].map(name => fetch(sitePath(`data/${name}.json`))));
     if (responses.some(r => !r.ok)) throw new Error('卡牌数据加载失败，请检查 data 目录。');
     [cards, traits, sourceInfo, equipment] = await Promise.all(responses.map(r => r.json()));
+    for (const item of [...cards, ...traits, ...equipment]) {
+      for (const field of ['image', 'artImage']) if (item[field]) item[field] = localAsset(item[field]);
+    }
     validateData(cards, traits);
     readStorage(); shell(); renderPage();
     document.addEventListener('keydown', event => {
