@@ -769,3 +769,64 @@ dialog[open] { animation: appear .18s ease-out; }
   .synergy-ratio > span { font-size: 11px; }
   .squad-synergies .synergy-row { min-height: 56px; }
 }
+
+/* Product identity and creator credit. */
+.brand { min-width: 0; flex-shrink: 0; }
+.brand-name { font-size: 18px; letter-spacing: .4px; line-height: 1.5; white-space: nowrap; }
+.brand-name > .creator-credit { color: #8a9a7b; font-size: 9px; font-weight: 400; letter-spacing: .2px; margin-top: 2px; }
+.footer-identity { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.footer-identity > strong { font-size: 11px; font-weight: 500; color: #839775; }
+.footer-identity > .creator-credit { color: #8d9d7f; font-size: 10px; letter-spacing: .1px; }
+
+/* Separate reading an operator profile from editing squad membership. */
+.related-cards { display: grid; gap: 8px; margin-top: 14px; }
+.related-member { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; padding: 11px 12px; border: 1px solid #e3e9da; border-radius: 9px; background: #fbfcf7; }
+.related-member.is-selected { border-color: #bdcfa9; background: #f1f6e9; }
+.related-member-profile { display: flex; align-items: center; gap: 11px; min-width: 0; }
+.related-member-portrait { display: block; width: 42px; height: 42px; padding: 0; flex-shrink: 0; overflow: hidden; border-radius: 7px; border: 1px solid #dce5d1; background: #e7eddd; }
+.related-member-copy { min-width: 0; }
+.related-member-name { display: block; font-size: 12px; font-weight: 550; color: #496943; text-align: left; overflow-wrap: anywhere; line-height: 1.6; }
+.related-member-copy > small { display: block; font-size: 9px; color: #99a889; margin-top: 5px; line-height: 1.5; }
+.related-member-actions { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+.related-member-actions > button { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-height: 36px; padding: 7px 11px; border-radius: 6px; font-size: 11px; white-space: nowrap; }
+.related-member-view { color: #8a9c79; background: #f5f8ef; border: 1px solid #dfe7d3; }
+.related-member-toggle { color: #fff; background: #315946; border: 1px solid #315946; }
+.related-member-toggle.is-selected { color: #6d8759; background: #e8efdc; border-color: #c6d5b3; }
+.related-member-toggle > .icon { width: 12px; height: 12px; }
+.related-list-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 24px; }
+.related-list-heading > h3 { margin: 0; }
+.related-list-heading > span { color: #a5b196; font-size: 9px; flex-shrink: 0; }
+.detail-return-pact { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 16px; font-size: 11px; color: #7a9564; min-height: 32px; }
+.detail-return-pact .icon { transform: rotate(180deg); width: 12px; height: 12px; }
+@media (max-width: 1050px) {
+  .header-inner { gap: 16px; }
+  .brand-name { font-size: 16px; }
+  .brand-symbol { width: 34px; height: 38px; }
+}
+@media (max-width: 600px) {
+  .brand { gap: 8px; }
+  .brand-name { font-size: 16px; letter-spacing: .1px; }
+  .brand-name > .creator-credit { font-size: 8px; letter-spacing: 0; }
+  .brand-symbol { width: 31px; height: 35px; }
+  .header-inner { gap: 12px; }
+  .local-status { font-size: 9px; }
+  .footer-identity { flex-direction: column; align-items: flex-start; gap: 7px; }
+  .footer-identity > strong { font-size: 11px; }
+  .footer-identity > .creator-credit { font-size: 10px; }
+  .related-member { gap: 8px; padding: 10px; }
+  .related-member-profile { gap: 8px; }
+  .related-member-portrait { width: 36px; height: 36px; }
+  .related-member-name { font-size: 11px; }
+  .related-member-copy > small { font-size: 8px; }
+  .related-member-actions { gap: 5px; }
+  .related-member-actions > button { font-size: 10px; padding: 6px 8px; }
+  .related-list-heading { gap: 8px; }
+  .related-list-heading > span { font-size: 8px; }
+}
+@media (max-width: 360px) {
+  .brand-name { font-size: 14px; }
+  .brand-symbol { width: 28px; }
+  .related-member-actions { flex-direction: column; gap: 4px; }
+  .related-member-actions > button { min-height: 30px; padding: 5px 8px; min-width: 54px; }
+  .related-list-heading > span { font-size: 7px; }
+}

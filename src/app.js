@@ -97,12 +97,12 @@ function readStorage() {
 function shell() {
   $('#app').innerHTML = `
     <header class="site-header"><div class="header-inner">
-      <a class="brand" href="#" aria-label="弈阵首页"><span class="brand-symbol"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="m18 3 13 7.5v15L18 33 5 25.5v-15Z" stroke="currentColor" stroke-width="1.5"/><path d="m18 10 7 4v8l-7 4-7-4v-8Z" fill="currentColor"/></svg></span><span class="brand-name">弈阵<span>LINEUP LAB</span></span></a>
+      <a class="brand" href="#" aria-label="卫戍协议小队规划器首页"><span class="brand-symbol"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="m18 3 13 7.5v15L18 33 5 25.5v-15Z" stroke="currentColor" stroke-width="1.5"/><path d="m18 10 7 4v8l-7 4-7-4v-8Z" fill="currentColor"/></svg></span><span class="brand-name">卫戍协议小队规划器<span class="creator-credit">制作人 · B站 @k117777_01</span></span></a>
       <nav class="desktop-nav" aria-label="主导航">${navButtons()}</nav>
-      <span class="local-status"><i></i> 本地工作台</span>
+      <span class="local-status"><i></i> 小队规划</span>
     </div></header>
     <main id="main" class="page"></main>
-    <footer class="site-footer"><span>弈阵 <span class="footer-dot">·</span> 让每一份羁绊恰到好处</span><span>LOCAL FIRST <span class="footer-dot">/</span> V 0.10</span></footer>
+    <footer class="site-footer"><div class="footer-identity"><strong>卫戍协议小队规划器</strong><span class="creator-credit">制作人 · B站 @k117777_01</span></div><span>卫戍协议 · 规程 <span class="footer-dot">/</span> V 0.11</span></footer>
     <nav class="mobile-nav" aria-label="手机导航">${navButtons()}</nav>
     <dialog id="dialog" aria-label="详情"><div id="dialog-content"></div></dialog>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>`;
@@ -135,7 +135,7 @@ function navButtons() {
 
 function renderPage() {
   document.querySelectorAll('.desktop-nav, .mobile-nav').forEach(nav => nav.innerHTML = navButtons());
-  const headings = { builder: ['BUILD YOUR SYNERGY', '好阵容，从羁绊开始。', '挑选干员，搭配装备，实时查看小队盟约。'], library: ['OPERATOR ARCHIVE', '每一张卡，都值得了解。', '搜索干员、盟约和特质，找到你需要的搭配。'], rules: ['PACT & EQUIPMENT ARCHIVE', '让每一件装备，都有用武之地。', '查阅 PRTS 盟约规则、人数条件与装备效果。'] };
+  const headings = { builder: ['BUILD YOUR SYNERGY', '开始挑选阵容', '挑选干员，搭配装备，实时查看小队盟约。'], library: ['OPERATOR ARCHIVE', '了解你的干员', '搜索干员、盟约和特质，找到你需要的搭配。'], rules: ['PACT & EQUIPMENT ARCHIVE', '了解所用盟约与装备', '查阅 PRTS 盟约规则、人数条件与装备效果。'] };
   const [eyebrow, title, subtitle] = headings[view];
   $('#main').innerHTML = `<div class="page-heading"><div><div class="eyebrow"><span></span>${eyebrow}</div><h1>${title}</h1><p>${subtitle}</p></div><div class="demo-badge">${icon('book')}<div><strong>卫戍协议 · 规程</strong><span>PRTS 盟约记录</span></div></div></div>
     ${view === 'builder' ? `<div class="workspace"><section id="squad-panel" class="panel squad-panel" aria-label="已选小队"></section><section class="panel library-panel" aria-label="卡牌库">${libraryShell()}</section></div>` : view === 'library' ? `<section class="panel standalone-library" aria-label="卡牌图鉴">${libraryShell()}</section>` : referenceShell()}
@@ -225,12 +225,12 @@ function openDialog(content, label) {
 function closeDialog() { $('#dialog').close(); }
 const dialogClose = () => `<button class="dialog-close icon-button" data-action="close" aria-label="关闭弹窗">${icon('close')}</button>`;
 
-function showCard(id) {
+function showCard(id, fromTrait = '', fromScroll = 0) {
   const card = cards.find(c => c.id === id);
   if (!card) return;
   const added = selected.includes(id);
   currentSkill = 0;
-  openDialog(`<div class="detail-hero operator-detail">${portrait(card, 'detail')}<div class="detail-hero-shade"></div>${dialogClose()}<div class="detail-heading"><span class="eyebrow">OPERATOR PROFILE <span class="detail-demo">${tierNames[card.tier]} 阶</span></span><h2>${escape(card.name)}</h2><p>${escape(card.title)}</p></div>${card.artImage ? `<button class="view-art" data-action="art" data-id="${escape(id)}">查看立绘 ${icon('arrow')}</button>` : ''}</div><div class="detail-body"><div class="operator-facts"><span>${icon(professionIcons[card.profession])}${escape(card.profession)}</span><span>${escape(card.branch)}</span>${card.faction ? `<span>${escape(card.faction)}</span>` : ''}</div><div class="mode-feature-section"><div class="pact-detail-heading"><h3>模式特质</h3><span class="classification-state">${escape(card.featureCategory)} · PRTS</span></div><div class="mode-feature-variants"><section><h4>普通</h4><p class="mode-feature-text">${escape(card.modeFeature)}</p></section><section><h4>精锐</h4><p class="mode-feature-text">${escape(card.eliteFeature)}</p></section></div></div><h3>职业特性 · PRTS</h3><p class="detail-description">${escape(card.description || '卡牌特性待补充。')}</p><div class="skill-section"><div class="skill-section-heading"><h3>干员技能</h3><span>常规技能参考</span></div><div id="skill-panel" data-id="${escape(id)}"></div></div>${corePactDetails(card)}${added ? `<button class="secondary-button full-width detail-config-button" data-action="configure" data-id="${escape(id)}">${icon('edit')}配置装备与精锐状态</button>` : ''}<a class="source-link" href="${escape(card.sourceUrl)}" target="_blank" rel="noopener noreferrer">资料来源：PRTS · ${escape(card.name)} ${icon('arrow')}</a><button class="primary-button full-width ${added ? 'remove-button' : ''}" data-action="detail-toggle" data-id="${escape(id)}">${icon(added ? 'close' : 'plus')}${added ? '从小队移除' : '加入我的小队'}</button></div>`, `${card.name}卡牌详情`);
+  openDialog(`<div class="detail-hero operator-detail">${portrait(card, 'detail')}<div class="detail-hero-shade"></div>${dialogClose()}<div class="detail-heading"><span class="eyebrow">OPERATOR PROFILE <span class="detail-demo">${tierNames[card.tier]} 阶</span></span><h2>${escape(card.name)}</h2><p>${escape(card.title)}</p></div>${card.artImage ? `<button class="view-art" data-action="art" data-id="${escape(id)}">查看立绘 ${icon('arrow')}</button>` : ''}</div><div class="detail-body">${fromTrait ? `<button class="detail-return-pact" data-action="trait" data-id="${escape(fromTrait)}" data-scroll="${fromScroll}">${icon('chevron')}返回${escape(pactName(fromTrait))}盟约</button>` : ''}<div class="operator-facts"><span>${icon(professionIcons[card.profession])}${escape(card.profession)}</span><span>${escape(card.branch)}</span>${card.faction ? `<span>${escape(card.faction)}</span>` : ''}</div><div class="mode-feature-section"><div class="pact-detail-heading"><h3>模式特质</h3><span class="classification-state">${escape(card.featureCategory)} · PRTS</span></div><div class="mode-feature-variants"><section><h4>普通</h4><p class="mode-feature-text">${escape(card.modeFeature)}</p></section><section><h4>精锐</h4><p class="mode-feature-text">${escape(card.eliteFeature)}</p></section></div></div><h3>职业特性 · PRTS</h3><p class="detail-description">${escape(card.description || '卡牌特性待补充。')}</p><div class="skill-section"><div class="skill-section-heading"><h3>干员技能</h3><span>常规技能参考</span></div><div id="skill-panel" data-id="${escape(id)}"></div></div>${corePactDetails(card)}${added ? `<button class="secondary-button full-width detail-config-button" data-action="configure" data-id="${escape(id)}">${icon('edit')}配置装备与精锐状态</button>` : ''}<a class="source-link" href="${escape(card.sourceUrl)}" target="_blank" rel="noopener noreferrer">资料来源：PRTS · ${escape(card.name)} ${icon('arrow')}</a><button class="primary-button full-width ${added ? 'remove-button' : ''}" data-action="detail-toggle" data-id="${escape(id)}" data-return-trait="${escape(fromTrait)}" data-return-scroll="${fromScroll}">${icon(added ? 'close' : 'plus')}${added ? '从小队移除' : '加入我的小队'}</button></div>`, `${card.name}卡牌详情`);
   renderSkillPanel(id);
 }
 
@@ -259,8 +259,12 @@ function corePactDetails(card) {
   return `<div class="pact-detail-heading"><h3>核心盟约</h3><span class="classification-state">PRTS 模式归属</span></div>${core.length ? pactButtons(core) : '<p class="pact-inference-note">无核心盟约</p>'}<div class="pact-detail-heading"><h3>附加盟约</h3></div>${additional.length ? pactButtons(additional) : '<p class="pact-inference-note">无附加盟约</p>'}<a class="source-link" href="${escape(card.modeData.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看 PRTS 模式记录 ${icon('arrow')}</a>`;
 }
 
-function relatedList(list, instance = 'related') {
-  return `<div class="related-cards">${list.map(c => `<button data-action="details" data-id="${escape(c.id)}"><span>${portrait(c, instance)}</span><strong>${escape(c.name)}</strong><small>${selected.includes(c.id) ? '已入队' : `${c.tier} 阶`}</small>${icon('chevron')}</button>`).join('')}</div>`;
+function relatedList(list, instance = 'related', traitId = '') {
+  return `<div class="related-cards" role="list">${list.map(c => {
+    const added = selected.includes(c.id);
+    const context = `data-trait-id="${escape(traitId)}"`;
+    return `<article class="related-member ${added ? 'is-selected' : ''}" role="listitem" data-card-id="${escape(c.id)}"><div class="related-member-profile"><button class="related-member-portrait" data-action="details" data-id="${escape(c.id)}" ${context} aria-label="查看${escape(c.name)}资料">${portrait(c, instance)}</button><div class="related-member-copy"><button class="related-member-name" data-action="details" data-id="${escape(c.id)}" ${context}>${escape(c.name)}</button><small>${c.tier} 阶 · ${escape(c.profession)}</small></div></div><div class="related-member-actions"><button class="related-member-view" data-action="details" data-id="${escape(c.id)}" ${context} aria-label="查看${escape(c.name)}资料">查看</button><button class="related-member-toggle ${added ? 'is-selected' : ''}" data-action="pact-toggle" data-id="${escape(c.id)}" ${context} aria-label="${added ? '将' + escape(c.name) + '移出小队' : '将' + escape(c.name) + '加入小队'}" aria-pressed="${added}">${icon(added ? 'close' : 'plus')}<span>${added ? '出队' : '入队'}</span></button></div></article>`;
+  }).join('')}</div>`;
 }
 
 function showAdditionalCatalog() { showPactCatalog('additional'); }
@@ -276,7 +280,7 @@ function showTrait(id) {
   const current = lineupFor().synergies.find(t => t.id === id);
   const related = cards.filter(c => trait.countMode === 'elite' || c.traitIds.includes(id));
   const converted = current?.members.filter(c => c.equipmentTraitIds.includes(id)) || [];
-  openDialog(`<div class="trait-dialog">${dialogClose()}<div class="large-emblem">${icon(trait.icon)}</div><span class="eyebrow">PRTS · ${trait.category === 'core' ? 'CORE' : 'ADDITIONAL'} PACT</span><h2>${escape(trait.name)}<span>${current?.count || 0} ${trait.countMode === 'elite' ? '名精锐' : '人'}${current?.isActive ? ' · 已激活' : ''}</span></h2>${current?.activationBonus ? `<p class="pact-bonus-note">实际 ${current.count} 人 ＋ 调和 ${current.activationBonus}，激活人数 ${current.activationCount}。“不同干员”条件按实际人数判断。</p>` : ''}${current?.inactive ? '<p class="capacity-warning">场上有多名独行干员，独行效果失效。</p>' : ''}<h3>人数与效果</h3><div class="trait-levels">${trait.levels.map((l, index) => `<div class="trait-level ${current?.levels[index]?.reached ? 'reached' : ''}"><b>${l.count} ${trait.countMode === 'elite' ? '精锐' : '人'}</b><span>${escape(l.effect)}</span>${current?.levels[index]?.reached ? icon('check') : ''}</div>`).join('')}</div><details class="pact-full-rule"><summary>完整盟约说明与层数条件</summary><p>${escape(trait.description)}</p></details>${converted.length ? `<h3>装备新增成员 <small>${converted.length}</small></h3>${relatedList(converted, 'converted')}` : ''}<h3>${trait.countMode === 'elite' ? '可通过精锐状态计数' : '原生盟约成员'} <small>${related.length}</small></h3>${relatedList(related, 'pact')}<a class="source-link" href="${escape(trait.sourceUrl)}" target="_blank" rel="noopener noreferrer">PRTS 盟约规则 ${icon('arrow')}</a></div>`, `${trait.name}盟约详情`);
+  openDialog(`<div class="trait-dialog">${dialogClose()}<div class="large-emblem">${icon(trait.icon)}</div><span class="eyebrow">PRTS · ${trait.category === 'core' ? 'CORE' : 'ADDITIONAL'} PACT</span><h2>${escape(trait.name)}<span>${current?.count || 0} ${trait.countMode === 'elite' ? '名精锐' : '人'}${current?.isActive ? ' · 已激活' : ''}</span></h2>${current?.activationBonus ? `<p class="pact-bonus-note">实际 ${current.count} 人 ＋ 调和 ${current.activationBonus}，激活人数 ${current.activationCount}。“不同干员”条件按实际人数判断。</p>` : ''}${current?.inactive ? '<p class="capacity-warning">场上有多名独行干员，独行效果失效。</p>' : ''}<h3>人数与效果</h3><div class="trait-levels">${trait.levels.map((l, index) => `<div class="trait-level ${current?.levels[index]?.reached ? 'reached' : ''}"><b>${l.count} ${trait.countMode === 'elite' ? '精锐' : '人'}</b><span>${escape(l.effect)}</span>${current?.levels[index]?.reached ? icon('check') : ''}</div>`).join('')}</div><details class="pact-full-rule"><summary>完整盟约说明与层数条件</summary><p>${escape(trait.description)}</p></details>${converted.length ? `<h3>装备新增成员 <small>${converted.length}</small></h3>${relatedList(converted, 'converted', id)}` : ''}<div class="related-list-heading"><h3>${trait.countMode === 'elite' ? '可通过精锐状态计数' : '原生盟约成员'} <small>${related.length}</small></h3><span>查看资料 · 快捷入队</span></div>${relatedList(related, 'pact', id)}<a class="source-link" href="${escape(trait.sourceUrl)}" target="_blank" rel="noopener noreferrer">PRTS 盟约规则 ${icon('arrow')}</a></div>`, `${trait.name}盟约详情`);
 }
 
 function equipmentIcon(item) {
@@ -358,8 +362,20 @@ function handleClick(event) {
   if (action === 'view') { view = button.dataset.view; history.replaceState(null, '', view === 'builder' ? '/' : `/?view=${view}`); renderPage(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   if (action === 'toggle' || action === 'detail-toggle') {
     const changed = updateSelection(selected.includes(id) ? selected.filter(x => x !== id) : [...selected, id]);
-    if (action === 'detail-toggle' && changed) showCard(id);
+    if (action === 'detail-toggle' && changed) showCard(id, button.dataset.returnTrait, Number(button.dataset.returnScroll) || 0);
     else $(`.hero-card [data-action="toggle"][data-id="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+  }
+  if (action === 'pact-toggle') {
+    const traitId = button.dataset.traitId, scroll = $('#dialog').scrollTop;
+    const expanded = $('.pact-full-rule')?.open || false, removing = selected.includes(id);
+    if (updateSelection(removing ? selected.filter(x => x !== id) : [...selected, id])) {
+      showTrait(traitId);
+      if ($('.pact-full-rule')) $('.pact-full-rule').open = expanded;
+      $('#dialog').scrollTop = scroll;
+      $(`.trait-dialog [data-action="pact-toggle"][data-id="${CSS.escape(id)}"]`)?.focus({ preventScroll: true });
+      if (!dialogReturnFocus?.isConnected) dialogReturnFocus = $(`.compact-pact[data-id="${CSS.escape(traitId)}"]`) || $('.brand');
+      toast(`${cards.find(c => c.id === id).name}已${removing ? '出队' : '入队'}`);
+    }
   }
   if (action === 'remove') updateSelection(selected.filter(x => x !== id));
   if (action === 'clear') { updateSelection([]); toast('已清空当前小队'); }
@@ -370,8 +386,8 @@ function handleClick(event) {
   if (action === 'equipment-info') showEquipment(id);
   if (action === 'reset-equipment') { loadout[id] = []; persist(); renderDynamic(); showMemberEditor(id); }
   if (action === 'apply-capacity') { capacityExpanded = true; persist(); closeDialog(); view = 'builder'; history.replaceState(null, '', '/'); renderPage(); toast('已使用人事部文档：小队上限 9 人'); }
-  if (action === 'details') showCard(id);
-  if (action === 'trait') showTrait(id);
+  if (action === 'details') showCard(id, button.dataset.traitId || '', $('#dialog').scrollTop);
+  if (action === 'trait') { showTrait(id); if (button.dataset.scroll) $('#dialog').scrollTop = Number(button.dataset.scroll) || 0; }
   if (action === 'close') closeDialog();
   if (action === 'art') showArt(id);
   if (action === 'classification') showClassification();

@@ -19,7 +19,7 @@ const server = http.createServer(async (req, res) => {
   } catch { res.writeHead(404).end('Not found'); }
 });
 server.listen(port, '0.0.0.0', () => {
-  console.log(`\n  弈阵 · LINEUP LAB\n  Local:   http://localhost:${port}`);
+  console.log(`\n  卫戍协议小队规划器\n  Local:   http://localhost:${port}`);
   for (const addresses of Object.values(networkInterfaces())) for (const address of addresses || []) if (address.family === 'IPv4' && !address.internal) console.log(`  Network: http://${address.address}:${port}`);
   console.log(`  Serving: ${root}\n`);
 });
