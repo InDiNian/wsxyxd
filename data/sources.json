@@ -37,7 +37,7 @@
     "盟约·辅助干员",
     "“暴躁铁皮”"
   ],
-  "equipmentRuleSourceUrl": "https://prts.wiki/w/%E5%8F%98%E5%BD%A2%E5%90%8C%E6%9E%84%E4%BD%93",
+  "equipmentRuleSourceUrl": "https://github.com/Kengxxiao/ArknightsGameData/blob/6f63c14e27b847ef74b53b00fe51fc322b3cd7ff/zh_CN/gamedata/excel/character_table.json",
   "squadRules": {
     "baseCapacity": 8,
     "expandedCapacity": 9,
@@ -45,5 +45,8 @@
   },
   "strategyCount": 61,
   "strategySourceUrl": "https://prts.wiki/w/%E5%8D%AB%E6%88%8D%E5%8D%8F%E8%AE%AE%C2%B7%E8%A7%84%E7%A8%8B/PRTS%E7%9B%9F%E7%BA%A6%E8%AE%B0%E5%BD%95#S.W.E.E.P.%E7%AD%96%E7%95%A5%E6%8A%A5%E5%91%8A",
-  "strategyImportedAt": "2026-11-09T11:26:19.094365+00:00"
+  "strategyImportedAt": "2026-11-09T11:26:19.094365+00:00",
+  "equipmentRulesImportedAt": "2026-11-10T00:32:34.392990+00:00",
+  "conversionOptionCount": 24,
+  "conversionPactCount": 18
 }

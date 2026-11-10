@@ -16,7 +16,6 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / '.cache/prts'
 URL = 'https://prts.wiki/w/' + quote('卫戍协议·规程/PRTS盟约记录')
-MORPH_URL = 'https://prts.wiki/w/' + quote('变形同构体')
 HEADERS = {'User-Agent': 'LineupLabLocal/0.8 (local reference importer)', 'Referer': 'https://prts.wiki/'}
 
 
@@ -127,12 +126,22 @@ def parse_operators(soup, cards, traits):
     return updates, excluded
 
 
+def conversion_rules():
+    data = json.loads((ROOT / 'data/equipment-conversions.json').read_text())
+    return data['rules'], data['sourceUrl']
+
+
+def conversion_for(name, rules):
+    matches = [r for r in rules if name == r['equipmentName'] or (r['series'] and name.endswith(r['equipmentName']))]
+    if len(matches) > 1:
+        raise ValueError(f'{name}: ambiguous conversion rules')
+    return matches[0]['traitId'] if matches else None
+
+
 def parse_equipment(soup, traits):
-    morph = BeautifulSoup(fetch(MORPH_URL, CACHE / 'morph-device.html'), 'lxml')
-    text = clean(morph.select_one('.mw-parser-output'))
-    matches = re.findall(r'“([^”]+)”([^\n]*?)→[〖【]([^〗】]+)[〗】]盟约', text)
-    names = {t['name']: t['id'] for t in traits}
-    mappings = {gear: names[pact] for gear, _, pact in matches if pact in names}
+    rules, source_url = conversion_rules()
+    if any(r['traitId'] not in {t['id'] for t in traits} for r in rules):
+        raise ValueError('Conversion rule refers to an unknown pact')
     equipment = []
     for table in soup.select('.sweep-item-card'):
         name = clean(table.select_one('.sweep-item-title-cell'))
@@ -148,8 +157,8 @@ def parse_equipment(soup, traits):
             'effect': effect, 'consumable': '销毁' in effect,
             'capacityLimit': 9 if name == '人事部文档' else None,
             'enablesPactConversion': name == '变形同构体',
-            'conversionTraitId': mappings.get('维式重锤' if '维式重锤' in name else name),
-            'conversionSourceUrl': MORPH_URL if name in mappings or '维式重锤' in name else None,
+            'conversionTraitId': conversion_for(name, rules),
+            'conversionSourceUrl': source_url if conversion_for(name, rules) else None,
             'sourceUrl': URL + '#' + quote(name), 'imageSourceUrl': img['src'] if img else None,
         })
     if not any(e['capacityLimit'] == 9 for e in equipment) or not any(e['enablesPactConversion'] for e in equipment):
@@ -193,7 +202,7 @@ def main():
     source = json.loads((ROOT / 'data/sources.json').read_text())
     for key in ['completedDraft', 'corePacts', 'additionalPacts', 'coreClassification', 'corePactClassification']:
         source.pop(key, None)
-    source.update({'modeSourceUrl': URL, 'modeImportedAt': now, 'modeDataSource': 'PRTS', 'modeOperatorCount': len(cards), 'pactCount': len(traits), 'equipmentCount': len(equipment), 'excludedSpecialUnits': excluded, 'synergyStatus': 'source', 'equipmentRuleSourceUrl': MORPH_URL, 'squadRules': {'baseCapacity': 8, 'expandedCapacity': 9, 'equipmentSlots': 2}})
+    source.update({'modeSourceUrl': URL, 'modeImportedAt': now, 'modeDataSource': 'PRTS', 'modeOperatorCount': len(cards), 'pactCount': len(traits), 'equipmentCount': len(equipment), 'excludedSpecialUnits': excluded, 'synergyStatus': 'source', 'equipmentRuleSourceUrl': conversion_rules()[1], 'squadRules': {'baseCapacity': 8, 'expandedCapacity': 9, 'equipmentSlots': 2}})
     for name, data in [('cards', cards), ('traits', traits), ('equipment', equipment), ('sources', source)]:
         (ROOT / f'data/{name}.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     core_report = {'source': 'PRTS', 'sourceUrl': URL, 'importedAt': now, 'operatorCount': len(cards), 'corePacts': [{'id': t['id'], 'name': t['name'], 'members': [c['name'] for c in cards if t['id'] in c['traitIds']]} for t in traits if t['category'] == 'core']}

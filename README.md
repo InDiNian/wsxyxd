@@ -20,7 +20,7 @@ npm run preview
 
 ## 数据来源
 
-模式归属、普通 / 精锐特质、盟约人数和效果、装备信息统一来自 [PRTS：卫戍协议·规程 / PRTS盟约记录](https://prts.wiki/w/卫戍协议·规程/PRTS盟约记录)。同构装备对应关系另参考 [变形同构体](https://prts.wiki/w/变形同构体) 天赋表。
+模式归属、普通 / 精锐特质、盟约人数和效果、装备信息统一来自 [PRTS：卫戍协议·规程 / PRTS盟约记录](https://prts.wiki/w/卫戍协议·规程/PRTS盟约记录)。同构装备对应关系采用[本期游戏数据的变形同构体天赋](https://github.com/Kengxxiao/ArknightsGameData/blob/6f63c14e27b847ef74b53b00fe51fc322b3cd7ff/zh_CN/gamedata/excel/character_table.json)，固定提交版本并保留提取记录，避免混入旧期搭配。
 
 - 141 位默认参战干员，一至六阶分别为 19、24、26、27、25、20 位。
 - 10 个核心盟约、16 个附加盟约及其真实激活人数、人数条件、层数条件。
@@ -39,7 +39,7 @@ npm run preview
 - 满员时阻止继续添加；9 人阵容不能直接关闭扩容，需先移除至 8 人。旧版本超过人数上限的小队会保留所有成员，并提示调整，避免静默丢失。
 - 每位干员可配置两个装备位。快速选择同构组合会同时配上「变形同构体」和对应装备。
 - 仅当同一干员同时携带同构体与已明确对应盟约的装备时，才增加盟约归属。单独装备不增加；原生与装备重复的盟约仍只计 1 人，卸下后立即撤销。
-- 转化采用 PRTS 天赋表当前明确列出的对应关系，共 19 件可搭配装备、13 种盟约；维式重锤系列按该表的系列规则处理。未列明的关系不根据装备名称推断。
+- 转化采用本期游戏数据同构体天赋中的对应关系，共 24 件可搭配装备、18 种盟约；包含莱塔尼亚小鼓、伊比利亚骨刺刀、乌萨斯呼吸器、灵巧涡轮手套与聚合急救箱。七种维式重锤按天赋中的系列规则处理。未列明的关系不根据装备名称推断。
 - 「人事部文档」为消耗型装备，扩容作为小队状态记录，不占干员装备位。其他消耗型装备可查阅效果，不作为持续携带的装备列入装备位。
 - 精锐开关影响当前特质展示，并使所有精锐干员参与「绝技」计数。
 - 核心盟约通常 3 人激活，6 名不同干员有额外效果。「调和」增加 1 个核心激活人数，单独显示奖励；6 名不同干员条件仍按实体成员判断。「独行」有多名成员时失效。「绝技」按 2 / 5 名精锐判断。
@@ -71,6 +71,8 @@ python3 scripts/import-strategies.py
 
 第四步从同一份盟约记录页面快照导入策略报告、解锁条件和发起人头像，避免混用旧期策略数值。策略数量发生变化时，导入脚本会停止并提示复核。
 
+同构映射保存在 `data/equipment-conversions.json`，包含游戏数据提交 SHA、文件哈希、装置 ID 和天赋原文。模式导入脚本直接复用这份映射；更新时运行 `python3 scripts/import-equipment-conversions.py --revision 6f63c14e27b847ef74b53b00fe51fc322b3cd7ff`，将参数替换为已复核的新版提交 SHA。
+
 `data/mode-import.json` 记录导入数量、特殊单位排除项和图标下载异常。完整核心盟约成员记录见 `data/core-pacts.json` 与 `docs/core-pacts.md`。
 
 ## 文件结构
@@ -84,10 +86,12 @@ scripts/server.mjs           本地静态服务，不提供资料写入 API
 scripts/import-prts.py       默认名单、常规技能和默认立绘导入
 scripts/import-elite2-avatars.py 精二头像导入
 scripts/import-pact-records.py 模式盟约、特质、装备和图标导入
+scripts/import-equipment-conversions.py 本期同构体天赋映射导入
 scripts/import-strategies.py 策略效果、解锁条件与发起人头像导入
 data/cards.json              干员与模式归属、普通 / 精锐特质
 data/traits.json             核心 / 附加盟约条件和效果
 data/equipment.json          装备与同构转化规则
+data/equipment-conversions.json 同构体天赋原文、映射和固定版本来源
 data/strategies.json         策略资料
 data/sources.json            来源、范围、时间和小队规则
 assets/operators/            本地干员资源

@@ -1,0 +1,101 @@
+{
+  "source": "Arknights game data · device talent",
+  "sourceUrl": "https://github.com/Kengxxiao/ArknightsGameData/blob/6f63c14e27b847ef74b53b00fe51fc322b3cd7ff/zh_CN/gamedata/excel/character_table.json",
+  "revision": "6f63c14e27b847ef74b53b00fe51fc322b3cd7ff",
+  "sha256": "eb6fff6fb3ce605bd60db2206a644625a3d145b4c46fa126f218cd51df4f1f1d",
+  "deviceId": "trap_1073_acarm073",
+  "importedAt": "2026-11-10T00:32:34.392990+00:00",
+  "talentDescription": "“炎国短刀”→【炎】盟约\n“维式重锤”系列装备→【维多利亚】盟约\n“阿戈尔重刃”→【阿戈尔】盟约\n“萨尔贡浓茶”→【萨尔贡】盟约\n“伊比利亚骨刺刀”→【伊比利亚】盟约\n“莱塔尼亚小鼓”→【莱塔尼亚】盟约\n“谢拉格不融冰”→【谢拉格】盟约\n“乌萨斯呼吸器”→【乌萨斯】盟约\n“卡西米尔竞技旗”→【卡西米尔】盟约\n“叙拉古正装”→【叙拉古】盟约\n“精准狙击镜”→【精准】盟约\n“突袭手雷”→【突袭】盟约\n“坚守盾牌”→【坚守】盟约\n“不屈弹射器”→【不屈】盟约\n“迅捷作战粮”→【迅捷】盟约\n“灵巧涡轮手套”→【灵巧】盟约\n“奥术法阵”→【奥术】盟约\n“聚合急救箱”→【聚合】盟约",
+  "rules": [
+    {
+      "equipmentName": "炎国短刀",
+      "series": false,
+      "traitId": "core-yan"
+    },
+    {
+      "equipmentName": "维式重锤",
+      "series": true,
+      "traitId": "core-victoria"
+    },
+    {
+      "equipmentName": "阿戈尔重刃",
+      "series": false,
+      "traitId": "core-abyssal-hunters"
+    },
+    {
+      "equipmentName": "萨尔贡浓茶",
+      "series": false,
+      "traitId": "core-sargon"
+    },
+    {
+      "equipmentName": "伊比利亚骨刺刀",
+      "series": false,
+      "traitId": "core-iberia"
+    },
+    {
+      "equipmentName": "莱塔尼亚小鼓",
+      "series": false,
+      "traitId": "core-leithanien"
+    },
+    {
+      "equipmentName": "谢拉格不融冰",
+      "series": false,
+      "traitId": "core-kjerag"
+    },
+    {
+      "equipmentName": "乌萨斯呼吸器",
+      "series": false,
+      "traitId": "core-ursus"
+    },
+    {
+      "equipmentName": "卡西米尔竞技旗",
+      "series": false,
+      "traitId": "core-kazimierz"
+    },
+    {
+      "equipmentName": "叙拉古正装",
+      "series": false,
+      "traitId": "core-siracusa"
+    },
+    {
+      "equipmentName": "精准狙击镜",
+      "series": false,
+      "traitId": "additional-precision"
+    },
+    {
+      "equipmentName": "突袭手雷",
+      "series": false,
+      "traitId": "additional-assault"
+    },
+    {
+      "equipmentName": "坚守盾牌",
+      "series": false,
+      "traitId": "additional-steadfast"
+    },
+    {
+      "equipmentName": "不屈弹射器",
+      "series": false,
+      "traitId": "additional-indomitable"
+    },
+    {
+      "equipmentName": "迅捷作战粮",
+      "series": false,
+      "traitId": "additional-swiftness"
+    },
+    {
+      "equipmentName": "灵巧涡轮手套",
+      "series": false,
+      "traitId": "additional-dexterity"
+    },
+    {
+      "equipmentName": "奥术法阵",
+      "series": false,
+      "traitId": "additional-arcane"
+    },
+    {
+      "equipmentName": "聚合急救箱",
+      "series": false,
+      "traitId": "additional-aggregation"
+    }
+  ]
+}

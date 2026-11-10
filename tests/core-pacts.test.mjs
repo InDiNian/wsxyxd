@@ -88,5 +88,28 @@ test('build normalization preserves old squads, keeps only two valid carrying sl
   assert.deepEqual(normalized.eliteIds, [ids[0]]); assert.deepEqual(normalized.loadout, { [ids[0]]: [morph.id, knife.id] });
   assert.deepEqual(normalizeBuild(JSON.parse(JSON.stringify(normalized)), cards, equipment), normalized);
   assert.equal(document.capacityLimit, 9); assert.equal(document.consumable, true);
-  assert.equal(equipment.length, 70); assert.equal(equipment.filter(e => e.conversionTraitId).length, 19);
+  assert.equal(equipment.length, 70); assert.equal(equipment.filter(e => e.conversionTraitId).length, 24);
+});
+
+test('current homologue talent covers all 18 pacts including the drum and preserves all hammer variants', () => {
+  const morph = gear('变形同构体');
+  for (const [name, traitId] of [['莱塔尼亚小鼓', 'core-leithanien'], ['伊比利亚骨刺刀', 'core-iberia'], ['乌萨斯呼吸器', 'core-ursus'], ['灵巧涡轮手套', 'additional-dexterity'], ['聚合急救箱', 'additional-aggregation']]) {
+    const item = gear(name), target = cards.find(c => !c.traitIds.includes(traitId));
+    assert.equal(item.conversionTraitId, traitId);
+    assert.deepEqual(equippedTraits(target, [morph.id, item.id], equipment).equipmentTraitIds, [traitId]);
+    assert.deepEqual(equippedTraits(target, [null, item.id], equipment).equipmentTraitIds, []);
+    const native = cards.find(c => c.traitIds.includes(traitId));
+    assert.deepEqual(equippedTraits(native, [morph.id, item.id], equipment).equipmentTraitIds, []);
+  }
+  assert.equal(new Set(equipment.map(e => e.conversionTraitId).filter(Boolean)).size, 18);
+  const hammers = equipment.filter(e => e.name.endsWith('维式重锤'));
+  assert.equal(hammers.length, 7);
+  assert.ok(hammers.every(e => e.conversionTraitId === 'core-victoria'));
+  const target = card('折桠'), native = cards.filter(c => c.traitIds.includes('core-leithanien')).slice(0, 2);
+  const ids = [target.id, ...native.map(c => c.id)];
+  const config = { equipment, loadout: { [target.id]: [morph.id, gear('莱塔尼亚小鼓').id] } };
+  const active = calculateLineup(ids, cards, traits, config).synergies.find(t => t.id === 'core-leithanien');
+  assert.equal(active.count, 3); assert.equal(active.isActive, true);
+  const removed = calculateLineup(ids, cards, traits, { equipment }).synergies.find(t => t.id === 'core-leithanien');
+  assert.equal(removed.count, 2); assert.equal(removed.isActive, false);
 });

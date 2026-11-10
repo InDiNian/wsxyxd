@@ -3,10 +3,12 @@
   "operators": 141,
   "pacts": 26,
   "equipment": 70,
-  "conversionOptions": 19,
+  "conversionOptions": 24,
   "excludedSpecialUnits": [
     "盟约·辅助干员",
     "“暴躁铁皮”"
   ],
-  "imageWarnings": []
+  "imageWarnings": [],
+  "conversionPacts": 18,
+  "conversionRulesImportedAt": "2026-11-10T00:32:34.392990+00:00"
 }
